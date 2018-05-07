@@ -90,4 +90,16 @@
  */
 - (LinkNode *)findkThNode:(LinkNode *)headNode k:(int)k;
 
+
+
+/**
+ 判断两个链表是否相交
+
+ @param list1 第一个链表
+ @param list2 第二个链表
+ @return 返回交点
+ */
+- (LinkNode *) isCross:(LinkNode *)list1head list2:(LinkNode *)list2head;
+
+
 @end

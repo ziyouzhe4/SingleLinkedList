@@ -21,10 +21,15 @@
 
 // 0. 初始化链表
         LinkList *list = [[LinkList alloc] init];
+
+        LinkList *list2 = [[LinkList alloc] init];
+        [list2 insertNode:[[LinkNode alloc] initWithKey:@"0" value:@"000"]];
+
         for (int i = 1; i <= 9; i++) {
             LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
 
             [list insertNode:node];
+
         }
 
 
@@ -36,6 +41,7 @@
             NSLog(@"传入参数有误");
         }
 
+
 // 2. 单链表反转
 
         [list reverse];
@@ -44,9 +50,17 @@
             NSLog(@"revertedHeaderNode key:%@   value:%@ ",newHeadNode.key,newHeadNode.value);
             newHeadNode = newHeadNode->next;
         }
+
+
 // 3. 单链表是否有环
    int isCircle = [list isCircleExist:[list headNode]];
     NSLog(@"链表 %@", isCircle ? @"有环" : @"无环");
+
+    
+// 4. 判断两个单链表是否相交
+
+    LinkNode *crossNode = [list isCross:[list headNode] list2:[list2 headNode]];
+    NSLog(@"list 和 list2 链表 的交点是 : %@",crossNode.value);
 
 
 }

@@ -257,6 +257,7 @@
         tempNode = tempNode->next;
         count++;
     }
+    // 链表总长度小于 k  返回 nil
     if(count < k){
         return nil;
     }
@@ -279,7 +280,73 @@
 
 }
 
+//相交链表的特征可知，每个链表都遍历到最后一个节点，如果最后一个节点相同，则链表相交，否则不相交。一个链表的长度len1，另一个链表的长度len2，那么两个链表只差为|len1-len2|，两个链表的中较长链表在遍历|len1-len2|与较短链表同时遍历,就能找到交点
+- (LinkNode *) isCross:(LinkNode *)list1head list2:(LinkNode *)list2head{
 
+    LinkNode *tp1 = list1head;
+    LinkNode *tp2 = list2head;
+
+    // 两个链表的长度
+    int length1  = 0;
+    int length2  = 0;
+
+    if(list1head == NULL || list2head == NULL){
+        return  nil;
+    }
+
+    while (tp1->next) {
+        length1++;
+        tp1 = tp1->next;
+    }
+
+    while (tp2->next) {
+        length2++;
+        tp2 = tp2->next;
+    }
+
+    // 如果两个链表最后一个结点不一样, 那么说明无交点
+    if (tp1 != tp2) {
+        return nil;
+    }else{
+
+        int i ;
+
+        tp1 = list1head->next;
+        tp2 = list2head->next;
+
+        if (length1 > length2) {
+
+            for(i=0; i<length1-length2; i++){
+                tp1 = tp1->next;
+            }
+            while(tp1->next!=NULL){
+                if(tp1==tp2){
+                    return tp1;
+                }else{
+                    tp1 = tp1->next;
+                    tp2 = tp2->next;
+                }
+            }
+        }else{
+
+            for(i=0; i<length2-length1; i++){
+                tp2 = tp2->next;
+            }
+            while(tp1->next!=NULL){
+                if(tp1==tp2){
+                    return tp1;
+                }else{
+                    tp1 = tp1->next;
+                    tp2 = tp2->next;
+                }
+            }
+        }
+
+    }
+
+    return nil;
+
+}
 
 
 @end
