@@ -349,4 +349,29 @@
 }
 
 
+- (LinkNode *)mergeSortedList:(LinkNode *)pHead1 otherNode:(LinkNode *)pHead2{
+
+    if (pHead1 == NULL) {
+        return  pHead2;
+    }
+
+    if (pHead2 == NULL) {
+        return pHead1;
+    }
+
+    LinkNode *pMergeNodeHead = NULL;
+
+    if ([pHead1.value intValue] > [pHead2.value intValue]) {
+        pMergeNodeHead = pHead2;
+        pMergeNodeHead->next = [self mergeSortedList:pHead1 otherNode:pHead2->next];
+    }else{
+        pMergeNodeHead = pHead1;
+        pMergeNodeHead->next = [self mergeSortedList:pHead1->next otherNode:pHead2];
+    }
+
+    return pMergeNodeHead;
+
+}
+
+
 @end

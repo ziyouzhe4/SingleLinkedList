@@ -95,11 +95,23 @@
 /**
  判断两个链表是否相交
 
- @param list1 第一个链表
- @param list2 第二个链表
+ @param list1head 第一个链表
+ @param list2head 第二个链表
  @return 返回交点
  */
 - (LinkNode *) isCross:(LinkNode *)list1head list2:(LinkNode *)list2head;
+
+/**
+ 合并两个有序的链表
+ 1,3,5,7,9
+ 0,2,4,6,8
+
+ @param pHead1 头结点
+ @param pHead2 头结点
+ @return 新的链表的头结点
+ */
+- (LinkNode *)mergeSortedList:(LinkNode *)pHead1 otherNode:(LinkNode *)pHead2;
+
 
 
 @end
