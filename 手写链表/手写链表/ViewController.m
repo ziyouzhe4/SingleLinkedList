@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "LinkList.h"
 #import "LinkNode.h"
+#import "CustomStack.h"
+
 
 @interface ViewController ()
 
@@ -69,23 +71,39 @@
 
 // 5. 合并两个有序的链表
 
-    LinkList *list = [[LinkList alloc] init];
-    for (int i = 1; i <= 5; i++) {
-        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
-        [list insertNode:node];
-    }
-    LinkList *list2 = [[LinkList alloc] init];
-    for (int i = 6; i <= 9; i++) {
-        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
-        [list2 insertNode:node];
+//    LinkList *list = [[LinkList alloc] init];
+//    for (int i = 1; i <= 5; i++) {
+//        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
+//        [list insertNode:node];
+//    }
+//    LinkList *list2 = [[LinkList alloc] init];
+//    for (int i = 6; i <= 9; i++) {
+//        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
+//        [list2 insertNode:node];
+//    }
+//
+//    LinkNode *mergeHeadNode = [list mergeSortedList:[list headNode] otherNode:[list2 headNode]];
+//    while (mergeHeadNode) {
+//        NSLog(@"合并后值为 : %@",mergeHeadNode.value);
+//        mergeHeadNode = mergeHeadNode->next;
+//    }
+
+
+// 6. 包含min函数的栈
+
+    CustomStack *stack = [[CustomStack alloc] init];
+
+    for (int i = 0; i < 2; i++) {
+        int randomNum = arc4random_uniform(20) + 1;
+        [stack stackWithMinPush:[NSNumber numberWithInt:randomNum]];
+        NSLog(@"栈中 push 进 %d",randomNum);
     }
 
-    LinkNode *mergeHeadNode = [list mergeSortedList:[list headNode] otherNode:[list2 headNode]];
-    while (mergeHeadNode) {
-        NSLog(@"合并后值为 : %@",mergeHeadNode.value);
-        mergeHeadNode = mergeHeadNode->next;
-    }
-
+    NSLog(@"stack 最小值是: %@",[stack stackWithMinMin]);
+    [stack stackWithMinPop];
+    NSLog(@"stack 最小值是: %@",[stack stackWithMinMin]);
+    [stack stackWithMinPop];
+    NSLog(@"stack 最小值是: %@",[stack stackWithMinMin]);
 
 }
 
