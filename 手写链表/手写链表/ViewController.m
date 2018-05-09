@@ -10,7 +10,8 @@
 #import "LinkList.h"
 #import "LinkNode.h"
 #import "CustomStack.h"
-
+#import "QueueWithTwoStacks.h"
+#import "StackWithTwoQueues.h"
 
 @interface ViewController ()
 
@@ -91,19 +92,62 @@
 
 // 6. 包含min函数的栈
 
-    CustomStack *stack = [[CustomStack alloc] init];
+//    CustomStack *stack = [[CustomStack alloc] init];
+//
+//    for (int i = 0; i < 2; i++) {
+//        int randomNum = arc4random_uniform(20) + 1;
+//        [stack stackWithMinPush:[NSNumber numberWithInt:randomNum]];
+//        NSLog(@"栈中 push 进 %d",randomNum);
+//    }
+//
+//    NSLog(@"stack 最小值是: %@",[stack stackWithMinMin]);
+//    [stack stackWithMinPop];
+//    NSLog(@"stack 最小值是: %@",[stack stackWithMinMin]);
+//    [stack stackWithMinPop];
+//    NSLog(@"stack 最小值是: %@",[stack stackWithMinMin]);
 
-    for (int i = 0; i < 2; i++) {
-        int randomNum = arc4random_uniform(20) + 1;
-        [stack stackWithMinPush:[NSNumber numberWithInt:randomNum]];
-        NSLog(@"栈中 push 进 %d",randomNum);
+
+// 5. 用两个栈实现队列操作
+//
+//    QueueWithTwoStacks *stack = [[QueueWithTwoStacks alloc] init];
+//
+//    for (int i = 1; i < 8; i++) {
+//        NSNumber *num = [NSNumber numberWithInt:i];
+//        [stack appendTail:num];
+//    }
+//
+//
+//    for (int j = 0; j < 3; j++) {
+//        NSNumber *deletedHead = [stack deleteHead];
+//        NSLog(@"删除头 : %@",deletedHead);
+//    }
+//
+//    [stack appendTail:@20];
+//
+//    NSNumber *deletedHead = [stack deleteHead];
+//    NSLog(@"删除头 : %@",deletedHead);
+
+
+
+// 6. 两个队列实现一个栈结构
+
+    StackWithTwoQueues *queue = [[StackWithTwoQueues alloc] init];
+
+    for (int i = 1; i < 8; i++) {
+        NSNumber *num = [NSNumber numberWithInt:i];
+        [queue push:num];
     }
 
-    NSLog(@"stack 最小值是: %@",[stack stackWithMinMin]);
-    [stack stackWithMinPop];
-    NSLog(@"stack 最小值是: %@",[stack stackWithMinMin]);
-    [stack stackWithMinPop];
-    NSLog(@"stack 最小值是: %@",[stack stackWithMinMin]);
+    for (int j = 0; j < 3; j++) {
+        [queue pop];
+    }
+
+    [queue push:@20];
+    [queue pop];
+
+
+
+
 
 }
 

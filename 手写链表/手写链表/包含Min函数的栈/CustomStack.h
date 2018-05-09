@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^StackBlock)(id obj);
-
 
 @interface CustomStack : NSObject
 
