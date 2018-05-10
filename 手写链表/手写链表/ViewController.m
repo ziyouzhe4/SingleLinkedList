@@ -12,6 +12,10 @@
 #import "CustomStack.h"
 #import "QueueWithTwoStacks.h"
 #import "StackWithTwoQueues.h"
+#import "BubblingSort.h"
+#import "QuickSort.h"
+#import "MergeSort.h"
+#import "BinarySearch.h"
 
 @interface ViewController ()
 
@@ -131,26 +135,64 @@
 
 // 6. 两个队列实现一个栈结构
 
-    StackWithTwoQueues *queue = [[StackWithTwoQueues alloc] init];
+//    StackWithTwoQueues *queue = [[StackWithTwoQueues alloc] init];
+//
+//    for (int i = 1; i < 8; i++) {
+//        NSNumber *num = [NSNumber numberWithInt:i];
+//        [queue push:num];
+//    }
+//
+//    for (int j = 0; j < 3; j++) {
+//        [queue pop];
+//    }
+//
+//    [queue push:@20];
+//    [queue pop];
 
-    for (int i = 1; i < 8; i++) {
-        NSNumber *num = [NSNumber numberWithInt:i];
-        [queue push:num];
+
+// 7.0 二分法查找
+    BinarySearch *search = [[BinarySearch alloc] init];
+    int index = [search searchNum:40];
+    NSString *str = @"";
+    if (index == -1) {
+        str = @"没有找到 ";
+    }else{
+        str = [NSString stringWithFormat:@"找到了 下标是: %d",index];
     }
 
-    for (int j = 0; j < 3; j++) {
-        [queue pop];
-    }
+    NSLog(@"%@ ",str);
 
-    [queue push:@20];
-    [queue pop];
+// 7.1 快排
+
+    QuickSort *quickSort = [[QuickSort alloc] init];
+    NSMutableArray *quickedSort = [quickSort sort];
+    [self sortArray:quickedSort title:@"快速"];
 
 
+// 7.2 归并排序
+
+    MergeSort *mergeSort = [[MergeSort alloc] init];
+    NSMutableArray *mergedSort = [mergeSort sort];
+    [self sortArray:mergedSort title:@"归并"];
+
+
+// 7.3 冒泡排序
+    BubblingSort *bubbSort = [[BubblingSort alloc] init];
+    NSMutableArray *bubbedSort = [bubbSort sort];
+    [self sortArray:bubbedSort title:@"冒泡"];
+
+
+    
 
 
 
 }
 
+- (void)sortArray:(NSMutableArray *)array title:(NSString *)title{
+
+        NSLog(@"%@ 排序后是: %@",title,array);
+
+}
 
 
 @end
