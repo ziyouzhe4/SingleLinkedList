@@ -29,7 +29,6 @@
         return;
     }
 
-
     // 每一趟划分，使左边的比基准小，右边的比基准大，并返回新的基准的位置
     int baseIndex = [self quickPartitionLeft:left right:right];
     // 判断左边是否排完，没排完递归排左边部分
