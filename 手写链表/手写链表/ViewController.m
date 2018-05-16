@@ -245,7 +245,7 @@
     a.rchild = c;
 
     //    [BTreeNode preorder:a];  //前序
-    [BTreeNode midorder:a];   // 中序
+//    [BTreeNode midorder:a];   // 中序
 //    [BTreeNode nextorder:a];  // 后序
 
 }
