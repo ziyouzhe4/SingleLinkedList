@@ -37,4 +37,7 @@
  */
 + (void)nextorder:(BTreeNode *)node;
 
+
+- (void)createBTree;
+
 @end
