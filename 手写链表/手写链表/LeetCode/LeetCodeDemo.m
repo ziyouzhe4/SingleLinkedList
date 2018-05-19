@@ -10,6 +10,9 @@
 
 @implementation LeetCodeDemo
 
+/**
+ 求一个字符串中出现最多字符的个数
+ */
 - (void)mostTimesOfCharacter{
 
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
@@ -48,5 +51,53 @@
     NSLog(@"出现次数最多的字符是  %@   次数是 : %d",strtemp,maxValue);
 
 }
+
+/**
+ 最大子序列和
+ */
+
+- (void)maxSubArray:(NSArray *)array{
+
+    int maxSum = [array[0] intValue];
+
+    int thisSum = [array[0] intValue];
+
+    int i;
+
+    for (i = 1; i < array.count; i++) {
+        if (thisSum < 0) {
+            thisSum = [array[i] intValue];
+        }else{
+            thisSum += [array[i] intValue];
+        }
+
+        if (thisSum > maxSum) {
+            maxSum = thisSum;
+        }
+
+    }
+
+    NSLog(@"最大子序列和是 : %d",maxSum);
+
+}
+
+
+// C 语言实现
+
+//int maxSubArray(int* nums, int numsSize) {
+//    int maxSum=nums[0],thisSum=nums[0];
+//    int i;
+//    for(i=1; i<numsSize; ++i){
+//        if(thisSum<0)
+//            thisSum=nums[i];
+//        else
+//            thisSum+=nums[i];
+//        if(thisSum>maxSum)
+//            maxSum = thisSum;
+//    }
+//    //if(maxSum<0)
+//    //   maxSum = 0;
+//    return maxSum;
+//}
 
 @end

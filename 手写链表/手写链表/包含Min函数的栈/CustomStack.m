@@ -7,7 +7,7 @@
 //
 
 #import "CustomStack.h"
-
+#import <objc/runtime.h>
 @interface CustomStack()
 
 // 存储栈数据

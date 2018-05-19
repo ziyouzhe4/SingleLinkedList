@@ -16,4 +16,11 @@
  */
 - (void)mostTimesOfCharacter;
 
+
+/**
+ 最大子序列和
+ */
+- (void)maxSubArray:(NSArray *)array;
+
+
 @end

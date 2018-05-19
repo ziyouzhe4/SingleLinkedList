@@ -19,8 +19,15 @@
 #import "BTreeNode.h"
 #import "LeetCodeDemo.h"
 
-@interface ViewController ()
+typedef int(^AddBlock)(int count);
 
+
+@interface ViewController ()
+{
+
+    AddBlock addblock;
+
+}
 @property (nonatomic,strong)NSMutableArray *array;
 
 @end
@@ -208,9 +215,17 @@
 
 // 10. leetcode
 
-    LeetCodeDemo *leetcode = [LeetCodeDemo new];
-    [leetcode mostTimesOfCharacter];
-   
+//    LeetCodeDemo *leetcode = [LeetCodeDemo new];
+//    [leetcode mostTimesOfCharacter];
+
+// 11 .最大子序列和
+
+//    NSArray *array = [NSArray arrayWithObjects:@"-4",@"0",@"2",@"-5",@"3", nil];
+//    [leetcode maxSubArray:array];
+
+
+    
+
 
 }
 
