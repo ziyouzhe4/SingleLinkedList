@@ -18,16 +18,11 @@
 #import "BinarySearch.h"
 #import "BTreeNode.h"
 #import "LeetCodeDemo.h"
-
-typedef int(^AddBlock)(int count);
+#import <objc/runtime.h>
 
 
 @interface ViewController ()
-{
 
-    AddBlock addblock;
-
-}
 @property (nonatomic,strong)NSMutableArray *array;
 
 @end
@@ -220,14 +215,13 @@ typedef int(^AddBlock)(int count);
 
 // 11 .最大子序列和
 
-//    NSArray *array = [NSArray arrayWithObjects:@"-4",@"0",@"2",@"-5",@"3", nil];
+//    NSArray *array = [NSArray arrayWithObjects:@"4",@"0",@"2",@"-5",@"3", nil];
 //    [leetcode maxSubArray:array];
 
 
-    
-
-
 }
+
+
 
 - (void)sortArray:(NSMutableArray *)array title:(NSString *)title{
 
