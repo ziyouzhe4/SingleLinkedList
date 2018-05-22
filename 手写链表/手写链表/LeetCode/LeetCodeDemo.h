@@ -20,7 +20,23 @@
 /**
  最大子序列和
  */
-- (void)maxSubArray:(NSArray *)array;
+- (void)maxSubArray:(NSMutableArray *)array;
+
+
+/**
+ 输入一个数组，把所有奇数放到所有偶数前面
+
+ @param array 数组
+ */
+- (void)makeOddnumberToFontOfEvennumber:(NSArray *)array;
+
+
+/**
+ 输入N，输出斐波那契数列中的第N项
+
+ @param num 顺序后推，避免递归把所有重复计算
+ */
+- (int)fibonacci:(int)num;
 
 
 @end

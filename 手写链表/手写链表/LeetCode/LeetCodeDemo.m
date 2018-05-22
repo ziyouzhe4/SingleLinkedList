@@ -81,6 +81,89 @@
 
 }
 
+/**
+ 输入一个数组，把所有奇数放到所有偶数前面
+
+ @param array 数组
+ */
+- (void)makeOddnumberToFontOfEvennumber:(NSMutableArray *)array{
+
+    if(array.count == 0){return;}
+
+    int start = 0;
+    int end = (int)array.count - 1;
+    while (start < end) {
+        // 奇数，直至找到偶数
+        while (start < end && ! [self isSuit:array[start]]) {
+            start++;
+        }
+        // 偶数，直至找到奇数
+        while (start < end && [self isSuit:array[end]]) {
+            end--;
+        }
+
+        // 一奇一偶，交换
+        if (start < end) {
+            NSNumber *temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+        }
+
+    }
+
+    NSLog(@"奇数在偶数前面  : %@",array);
+
+}
+
+- (BOOL)isSuit:(NSNumber *)num{
+    return [num intValue]  % 2 == 0;
+}
+
+
+/**
+ 输入N，输出斐波那契数列中的第N项
+
+ @param num 顺序后推，避免递归把所有重复计算
+ */
+- (int)fibonacci:(int)num{
+
+    NSArray *array = [NSArray arrayWithObjects:@"0",@"1", nil];
+
+    if (num < 2) {
+        return [array[num] intValue];
+    }
+
+    int num2 = [array[0] intValue];
+    int num1 = [array[1] intValue];
+    int tempNum = 0;
+
+    for (int i = 2; i <= num; i++) {
+
+        tempNum = num1 + num2;
+        num2 = num1;
+        num1 = tempNum;
+
+    }
+
+    // 在这里调用递归的做法
+    NSLog(@"递归的结果是 %d",[self fibonacci2:num]);
+
+
+    return tempNum;
+
+}
+
+- (int)fibonacci2:(int)num{
+
+    if (num == 0) {   return 0; }
+    if (num == 1) {   return 1; }
+    if (num == 2) {   return 1; }
+
+    return [self fibonacci2:num - 1] + [self fibonacci2:num - 2];
+
+}
+
+
 
 // C 语言实现
 

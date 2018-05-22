@@ -219,6 +219,15 @@
 //    [leetcode maxSubArray:array];
 
 
+// 12. 斐波那契数列(非递归)
+    LeetCodeDemo *leetcode = [LeetCodeDemo new];
+//    NSLog(@"非递归结果 %d",[leetcode fibonacci:9]);
+
+// 13. 输入一个数组，把所有奇数放到所有偶数前面
+
+    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"2",@"3",@"1",@"6",@"5", nil];
+    [leetcode makeOddnumberToFontOfEvennumber:array];
+
 }
 
 
