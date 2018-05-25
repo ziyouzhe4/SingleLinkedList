@@ -198,8 +198,8 @@
 
 
 // 8. 求字符串中字符个数
-//    NSLog(@"%d", [self convertToInt:@"马建杰"]);
-//    NSLog(@"%d", [self intSum:@"123"]);
+    NSLog(@"%d", [self convertToInt:@"马a建杰"]);
+//    NSLog(@"%d", [self intSum:@"1是23"]);
 
 
 // 9. 二叉树遍历
@@ -220,13 +220,71 @@
 
 
 // 12. 斐波那契数列(非递归)
-    LeetCodeDemo *leetcode = [LeetCodeDemo new];
+//    LeetCodeDemo *leetcode = [LeetCodeDemo new];
 //    NSLog(@"非递归结果 %d",[leetcode fibonacci:9]);
 
 // 13. 输入一个数组，把所有奇数放到所有偶数前面
 
-    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"2",@"3",@"1",@"6",@"5", nil];
-    [leetcode makeOddnumberToFontOfEvennumber:array];
+//    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"2",@"3",@"1",@"6",@"5", nil];
+//    [leetcode makeOddnumberToFontOfEvennumber:array];
+
+
+//    [leetcode findSameStrinArray];
+
+
+// 14. 河北两个数组后 找相同元素
+
+//    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"2",@"0",@"1",@"6",@"5",@"4",@"9",@"3", nil];
+//    NSMutableArray *array2 = [NSMutableArray arrayWithObjects:@"9",@"7",@"6",@"5",@"2", nil];
+//
+//    for (int i = 0; i < array.count; i++) {
+//        for (int j = 0; j < array.count - i - 1; j++) {
+//
+//            if ([array[j] intValue] >  [array[j+1] intValue]) {
+//                NSString *temp = array[j];
+//                array[j] = array[j+1];
+//                array[j+1] = temp;
+//            }
+//        }
+//    }
+//
+//    for (int i = 0; i < array2.count; i++) {
+//        for (int j = 0; j < array2.count - i - 1; j++) {
+//
+//            if ([array2[j] intValue] >  [array2[j+1] intValue]) {
+//                NSString *temp = array2[j];
+//                array2[j] = array2[j+1];
+//                array2[j+1] = temp;
+//            }
+//        }
+//    }
+
+//    NSLog(@"排序完的 array : %@",array);
+//    NSLog(@"排序完的 array2 : %@",array2);
+
+//    NSMutableArray *sameArray = [NSMutableArray array];
+//
+//    int a = 0;
+//    int b = 0;
+//
+//    while (a < array.count && b < array2.count) {
+//
+//        int num1 = [array[a] intValue];
+//        int num2 = [array2[b] intValue];
+//
+//        if (num1 > num2) {
+//            b++;
+//        }else if (num2 > num1){
+//            a++;
+//        }else{
+//            [sameArray addObject:[NSNumber numberWithInt:num1]];
+//            a++;
+//            b++;
+//        }
+//    }
+
+//    NSLog(@"相同的元素 : %@",sameArray);
+
 
 }
 

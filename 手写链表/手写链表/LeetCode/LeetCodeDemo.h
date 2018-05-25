@@ -39,4 +39,6 @@
 - (int)fibonacci:(int)num;
 
 
+- (void)findSameStrinArray;
+
 @end

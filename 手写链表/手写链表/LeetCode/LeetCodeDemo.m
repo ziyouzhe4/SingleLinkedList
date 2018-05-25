@@ -165,6 +165,54 @@
 
 
 
+/**
+ 找出一个数组中字符串相同字符大于 2的
+ */
+- (void)findSameStrinArray{
+
+    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"a",@"v",@"d",@"cc",@"sad",@"majianjie", nil];
+
+    for (int i = 0; i < 20; i++) {
+        [array addObject:[NSString stringWithFormat:@"zq%u",arc4random()%15]];
+    }
+
+    NSLog(@"=============查找之前==============");
+    NSLog(@"%@",array);
+    NSLog(@"=============查找之后==============");
+
+    NSMutableArray *tempArray = [NSMutableArray array];
+
+    while (array.count > 0) {
+        NSString *tempstr = array[0];
+        [array removeObjectAtIndex:0];
+        if ([array containsObject:tempstr]) {
+            [array removeObject:tempArray];
+            [tempArray addObject:tempstr];
+        }
+    }
+
+    NSLog(@"%@",tempArray);
+
+
+//    去重
+    
+//    NSArray *dataArray = @[@"2014-04-01",@"2014-04-02",@"2014-04-03",
+//                           @"2014-04-01",@"2014-04-02",@"2014-04-03",
+//                           @"2014-04-01",@"2014-04-03",@"2014-04-03",
+//                           @"2014-04-01",@"2014-04-02",@"2014-04-03",
+//                           @"2014-04-01",@"2014-04-02",@"2014-04-03",
+//                           @"2014-04-01",@"2014-04-02",@"2014-04-03",
+//                           @"2014-04-04",@"2014-04-06",@"2014-04-08",
+//                           @"2014-04-05",@"2014-04-07",@"2014-04-09",];
+//    NSMutableDictionary *dic = [[NSMutableDictionary alloc]initWithCapacity:0];
+//    for(NSString *str in dataArray)
+//    {
+//        [dic setValue:str forKey:str];
+//    }
+//    NSLog(@"%@",[dic allKeys]);
+
+}
+
 // C 语言实现
 
 //int maxSubArray(int* nums, int numsSize) {
