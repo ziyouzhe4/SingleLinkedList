@@ -23,6 +23,14 @@
 
 @interface ViewController ()
 
+
+@property (nonatomic,strong)NSTimer *timer1;
+@property (nonatomic,strong)NSTimer *timer2;
+@property (nonatomic,strong)NSTimer *timer3;
+@property (nonatomic,strong)NSTimer *timer4;
+
+@property (nonatomic,strong)NSString *name;
+
 @property (nonatomic,strong)NSMutableArray *array;
 
 @end
@@ -198,7 +206,7 @@
 
 
 // 8. 求字符串中字符个数
-    NSLog(@"%d", [self convertToInt:@"马a建杰"]);
+//    NSLog(@"%d", [self convertToInt:@"马a建杰"]);
 //    NSLog(@"%d", [self intSum:@"1是23"]);
 
 
@@ -210,7 +218,7 @@
 
 // 10. leetcode
 
-//    LeetCodeDemo *leetcode = [LeetCodeDemo new];
+    LeetCodeDemo *leetcode = [LeetCodeDemo new];
 //    [leetcode mostTimesOfCharacter];
 
 // 11 .最大子序列和
@@ -286,6 +294,12 @@
 //    NSLog(@"相同的元素 : %@",sameArray);
 
 
+
+    NSString *str = @"1221";
+
+    NSLog(@"%d",[leetcode IsPalindereme:str size:(int)str.length]);
+
+
 }
 
 
@@ -325,6 +339,62 @@
     }
     return count;
 }
+
+
+
+// ============= 快排 ================ //
+- (void)quickSortLeft:(int)left right:(int)right{
+
+    if (left >= right) {
+        return;
+    }
+
+    int baseIndex = [self sortParttionLeft:left right:right];
+
+    if (baseIndex - 1 > left) {
+        [self quickSortLeft:left right:baseIndex - 1];
+    }
+
+    if (baseIndex + 1 < right) {
+        [self quickSortLeft:baseIndex + 1 right:right];
+    }
+
+}
+
+- (int)sortParttionLeft:(int)l right:(int)r{
+
+    int left = l;
+    int right = r;
+    int base = (int)[self.array[left] intValue];
+
+    while (left < right) {
+
+        if (left < right && [self.array[right] intValue] >= base) {
+            right = right - 1;
+        }
+
+        [self swap:left b:right];
+
+        if (left < right && [self.array[left] intValue] <= base) {
+            left = left + 1;
+        }
+
+        [self swap:left b:right];
+
+    }
+
+    return right;
+
+}
+
+- (void)swap:(int)a b:(int)b{
+
+    NSNumber *temp = self.array[a];
+    self.array[a] = self.array[b];
+    self.array[b] = temp;
+
+}
+
 
 
 @end

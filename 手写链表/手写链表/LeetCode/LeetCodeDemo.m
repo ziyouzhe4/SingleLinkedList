@@ -231,4 +231,35 @@
 //    return maxSum;
 //}
 
+
+/**
+ 回文判断
+
+ @param str 要判断的字符串
+ @param size 长度
+ @return 是否是回文
+ */
+- (BOOL)IsPalindereme:(NSString *)str size:(int)size{
+
+    int begin = 1;
+    int end = size - 1;
+
+    while (begin < size)
+    {
+        NSString *pre = [str substringToIndex:begin];
+        pre = [pre substringWithRange:NSMakeRange(pre.length - 1, 1)];
+        NSString *next = [str substringFromIndex:end];
+        next = [next substringWithRange:NSMakeRange(0, 1)];
+        if (![pre isEqualToString: next])
+            return false;
+        ++begin;
+        --end;
+    }
+    return true;
+
+
+}
+
+
+
 @end

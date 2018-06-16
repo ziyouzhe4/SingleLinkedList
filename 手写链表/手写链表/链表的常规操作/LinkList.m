@@ -192,7 +192,7 @@
 - (int)isCircleExist:(LinkNode *)headerNode{
 
     if (!headerNode || headerNode.key.length == 0) {
-        return 0;
+        return -1;
     }
 
     LinkNode *slow = headerNode;

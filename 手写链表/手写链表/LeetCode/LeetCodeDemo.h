@@ -41,4 +41,14 @@
 
 - (void)findSameStrinArray;
 
+
+/**
+ 回文判断
+
+ @param str 要判断的字符串
+ @param size 长度
+ @return 是否是回文
+ */
+- (BOOL)IsPalindereme:(NSString *)str size:(int)size;
+
 @end
