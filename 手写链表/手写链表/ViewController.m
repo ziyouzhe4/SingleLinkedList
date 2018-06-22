@@ -300,6 +300,9 @@
     NSLog(@"%d",[leetcode IsPalindereme:str size:(int)str.length]);
 
 
+    char *strInt = "123459";
+    [leetcode strConverToInt:strInt];
+
 }
 
 

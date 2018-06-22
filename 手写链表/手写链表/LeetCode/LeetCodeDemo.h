@@ -51,4 +51,7 @@
  */
 - (BOOL)IsPalindereme:(NSString *)str size:(int)size;
 
+
+- (void)strConverToInt:(char *)str;
+
 @end
