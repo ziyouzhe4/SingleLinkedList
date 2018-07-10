@@ -54,4 +54,7 @@
 
 - (void)strConverToInt:(char *)str;
 
+
+- (void)findAppearOnceminIndex:(NSArray *)array;
+
 @end

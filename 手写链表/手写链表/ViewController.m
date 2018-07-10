@@ -206,7 +206,7 @@
 
 
 // 8. 求字符串中字符个数
-//    NSLog(@"%d", [self convertToInt:@"马a建杰"]);
+    NSLog(@"%d", [self convertToInt:@"马a建杰"]);
 //    NSLog(@"%d", [self intSum:@"1是23"]);
 
 
@@ -295,13 +295,21 @@
 
 
 
-    NSString *str = @"1221";
+//    NSString *str = @"1221";
 
-    NSLog(@"%d",[leetcode IsPalindereme:str size:(int)str.length]);
+//    NSLog(@"%d",[leetcode IsPalindereme:str size:(int)str.length]);
 
 
-    char *strInt = "123459";
-    [leetcode strConverToInt:strInt];
+//    char *strInt = "123459";
+//    [leetcode strConverToInt:strInt];
+
+
+//    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"2",@"0",@"1", nil];
+//
+//    [self quickSortLeft:0 right:(int)array.count - 1];
+
+
+    [leetcode findAppearOnceminIndex:nil];
 
 }
 
@@ -351,7 +359,7 @@
     if (left >= right) {
         return;
     }
-
+// 2 0 1
     int baseIndex = [self sortParttionLeft:left right:right];
 
     if (baseIndex - 1 > left) {

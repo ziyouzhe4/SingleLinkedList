@@ -272,9 +272,60 @@ int strToInt(char s[])
     for (i = 0; s[i] >= '0' && s[i] <= '9'; ++i)
     {
         n = 10 * n + (s[i] - '0');
-        NSLog(@"%d",n);
+//        NSLog(@"%d",n);
+//        NSLog(@"%d",s[i]);
     }
     return n;
 }
+
+/*将大写字母转换成小写字母*/
+int tolowerChar(int c)
+{
+    if (c >= 'A' && c <= 'Z')
+    {
+        return c + 'a' - 'A';
+    }
+    else
+    {
+        return c;
+    }
+}
+
+- (void)findAppearOnceminIndex:(NSArray *)array{
+
+
+    NSArray *arr = @[@"a",@"b",@"a"];
+
+//    NSInteger len = arr.count;
+//    NSMutableArray *ascii = [NSMutableArray array];
+//    for (int i = 0; i < 256; i++) {
+//        [ascii addObject:@0];
+//    }
+//
+//    for (int i = 0; i < len; ++i) {
+//        NSString *c = arr[i];
+//        NSInteger intNum = [c characterAtIndex:0];
+//        NSString *numStr = ascii[intNum];
+//        NSInteger a = [numStr integerValue];
+//        NSNumber *num = ascii[a];
+//        ascii[intNum] = [num integerValue] + 1;
+//    }
+//
+//
+//    for (int i = 0; i < len; ++i) {
+//
+//        NSString *numStr = arr[i];
+//        NSInteger a = [numStr integerValue];
+//        NSNumber *num = ascii[a];
+//        if ([num integerValue] == 1) {
+//            NSLog(@"找到了: %@", arr[i]);
+//            break;
+//        }
+//    }
+
+}
+
+
+
 
 @end
