@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30C161AB2413858B00BE33C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161AA2413858B00BE33C3 /* AppDelegate.m */; };
+		30C161AE2413858B00BE33C3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161AD2413858B00BE33C3 /* SceneDelegate.m */; };
+		30C161B12413858B00BE33C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161B02413858B00BE33C3 /* ViewController.m */; };
+		30C161B42413858B00BE33C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C161B22413858B00BE33C3 /* Main.storyboard */; };
+		30C161B62413858C00BE33C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C161B52413858C00BE33C3 /* Assets.xcassets */; };
+		30C161B92413858C00BE33C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C161B72413858C00BE33C3 /* LaunchScreen.storyboard */; };
+		30C161BC2413858C00BE33C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161BB2413858C00BE33C3 /* main.m */; };
+		30C161F2241385F900BE33C3 /* BaseSortArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161D7241385F900BE33C3 /* BaseSortArray.m */; };
+		30C161F3241385F900BE33C3 /* BubblingSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161D9241385F900BE33C3 /* BubblingSort.m */; };
+		30C161F4241385F900BE33C3 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161DA241385F900BE33C3 /* BinarySearch.m */; };
+		30C161F5241385F900BE33C3 /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161DB241385F900BE33C3 /* QuickSort.m */; };
+		30C161F6241385F900BE33C3 /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161DC241385F900BE33C3 /* MergeSort.m */; };
+		30C161F7241385F900BE33C3 /* BTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161DF241385F900BE33C3 /* BTreeNode.m */; };
+		30C161F8241385F900BE33C3 /* StackWithTwoQueues.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161E3241385F900BE33C3 /* StackWithTwoQueues.m */; };
+		30C161F9241385F900BE33C3 /* ViewController+DeadLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161E6241385F900BE33C3 /* ViewController+DeadLock.m */; };
+		30C161FA241385F900BE33C3 /* CustomStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161E8241385F900BE33C3 /* CustomStack.m */; };
+		30C161FB241385F900BE33C3 /* QueueWithTwoStacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161EB241385F900BE33C3 /* QueueWithTwoStacks.m */; };
+		30C161FC241385F900BE33C3 /* LinkList.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161EE241385F900BE33C3 /* LinkList.m */; };
+		30C161FD241385F900BE33C3 /* LinkNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161F1241385F900BE33C3 /* LinkNode.m */; };
+		30C162012413860100BE33C3 /* LeetCodeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161FF2413860100BE33C3 /* LeetCodeDemo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30C161A62413858B00BE33C3 /* SingleLinkedList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleLinkedList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C161A92413858B00BE33C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30C161AA2413858B00BE33C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30C161AC2413858B00BE33C3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		30C161AD2413858B00BE33C3 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		30C161AF2413858B00BE33C3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		30C161B02413858B00BE33C3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		30C161B32413858B00BE33C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30C161B52413858C00BE33C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30C161B82413858C00BE33C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30C161BA2413858C00BE33C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C161BB2413858C00BE33C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30C161D4241385F900BE33C3 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearch.h; sourceTree = "<group>"; };
+		30C161D5241385F900BE33C3 /* BubblingSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubblingSort.h; sourceTree = "<group>"; };
+		30C161D6241385F900BE33C3 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		30C161D7241385F900BE33C3 /* BaseSortArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSortArray.m; sourceTree = "<group>"; };
+		30C161D8241385F900BE33C3 /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
+		30C161D9241385F900BE33C3 /* BubblingSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubblingSort.m; sourceTree = "<group>"; };
+		30C161DA241385F900BE33C3 /* BinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearch.m; sourceTree = "<group>"; };
+		30C161DB241385F900BE33C3 /* QuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSort.m; sourceTree = "<group>"; };
+		30C161DC241385F900BE33C3 /* MergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeSort.m; sourceTree = "<group>"; };
+		30C161DD241385F900BE33C3 /* BaseSortArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSortArray.h; sourceTree = "<group>"; };
+		30C161DF241385F900BE33C3 /* BTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTreeNode.m; sourceTree = "<group>"; };
+		30C161E0241385F900BE33C3 /* BTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTreeNode.h; sourceTree = "<group>"; };
+		30C161E2241385F900BE33C3 /* StackWithTwoQueues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackWithTwoQueues.h; sourceTree = "<group>"; };
+		30C161E3241385F900BE33C3 /* StackWithTwoQueues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackWithTwoQueues.m; sourceTree = "<group>"; };
+		30C161E5241385F900BE33C3 /* ViewController+DeadLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+DeadLock.h"; sourceTree = "<group>"; };
+		30C161E6241385F900BE33C3 /* ViewController+DeadLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+DeadLock.m"; sourceTree = "<group>"; };
+		30C161E8241385F900BE33C3 /* CustomStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomStack.m; sourceTree = "<group>"; };
+		30C161E9241385F900BE33C3 /* CustomStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStack.h; sourceTree = "<group>"; };
+		30C161EB241385F900BE33C3 /* QueueWithTwoStacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueWithTwoStacks.m; sourceTree = "<group>"; };
+		30C161EC241385F900BE33C3 /* QueueWithTwoStacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueWithTwoStacks.h; sourceTree = "<group>"; };
+		30C161EE241385F900BE33C3 /* LinkList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkList.m; sourceTree = "<group>"; };
+		30C161EF241385F900BE33C3 /* LinkNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkNode.h; sourceTree = "<group>"; };
+		30C161F0241385F900BE33C3 /* LinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
+		30C161F1241385F900BE33C3 /* LinkNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkNode.m; sourceTree = "<group>"; };
+		30C161FF2413860100BE33C3 /* LeetCodeDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeetCodeDemo.m; sourceTree = "<group>"; };
+		30C162002413860100BE33C3 /* LeetCodeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeetCodeDemo.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30C161A32413858B00BE33C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30C1619D2413858B00BE33C3 = {
+			isa = PBXGroup;
+			children = (
+				30C161A82413858B00BE33C3 /* SingleLinkedList */,
+				30C161A72413858B00BE33C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30C161A72413858B00BE33C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30C161A62413858B00BE33C3 /* SingleLinkedList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30C161A82413858B00BE33C3 /* SingleLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				30C161FE2413860100BE33C3 /* LeetCode */,
+				30C161E7241385F900BE33C3 /* 包含Min函数的栈 */,
+				30C161DE241385F900BE33C3 /* 二叉树遍历 */,
+				30C161ED241385F900BE33C3 /* 链表的常规操作 */,
+				30C161E1241385F900BE33C3 /* 两个队列->栈 */,
+				30C161EA241385F900BE33C3 /* 两个栈->队列 */,
+				30C161D3241385F900BE33C3 /* 数组排序查找操作 */,
+				30C161E4241385F900BE33C3 /* 线程死锁分析 */,
+				30C161D2241385DA00BE33C3 /* New Group */,
+				30C161A92413858B00BE33C3 /* AppDelegate.h */,
+				30C161AA2413858B00BE33C3 /* AppDelegate.m */,
+				30C161AC2413858B00BE33C3 /* SceneDelegate.h */,
+				30C161AD2413858B00BE33C3 /* SceneDelegate.m */,
+				30C161AF2413858B00BE33C3 /* ViewController.h */,
+				30C161B02413858B00BE33C3 /* ViewController.m */,
+				30C161B22413858B00BE33C3 /* Main.storyboard */,
+				30C161B52413858C00BE33C3 /* Assets.xcassets */,
+				30C161B72413858C00BE33C3 /* LaunchScreen.storyboard */,
+				30C161BA2413858C00BE33C3 /* Info.plist */,
+				30C161BB2413858C00BE33C3 /* main.m */,
+			);
+			path = SingleLinkedList;
+			sourceTree = "<group>";
+		};
+		30C161D2241385DA00BE33C3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		30C161D3241385F900BE33C3 /* 数组排序查找操作 */ = {
+			isa = PBXGroup;
+			children = (
+				30C161D4241385F900BE33C3 /* BinarySearch.h */,
+				30C161D5241385F900BE33C3 /* BubblingSort.h */,
+				30C161D6241385F900BE33C3 /* QuickSort.h */,
+				30C161D7241385F900BE33C3 /* BaseSortArray.m */,
+				30C161D8241385F900BE33C3 /* MergeSort.h */,
+				30C161D9241385F900BE33C3 /* BubblingSort.m */,
+				30C161DA241385F900BE33C3 /* BinarySearch.m */,
+				30C161DB241385F900BE33C3 /* QuickSort.m */,
+				30C161DC241385F900BE33C3 /* MergeSort.m */,
+				30C161DD241385F900BE33C3 /* BaseSortArray.h */,
+			);
+			name = "数组排序查找操作";
+			path = "../../手写链表/手写链表/数组排序查找操作";
+			sourceTree = "<group>";
+		};
+		30C161DE241385F900BE33C3 /* 二叉树遍历 */ = {
+			isa = PBXGroup;
+			children = (
+				30C161DF241385F900BE33C3 /* BTreeNode.m */,
+				30C161E0241385F900BE33C3 /* BTreeNode.h */,
+			);
+			name = "二叉树遍历";
+			path = "../../手写链表/手写链表/二叉树遍历";
+			sourceTree = "<group>";
+		};
+		30C161E1241385F900BE33C3 /* 两个队列->栈 */ = {
+			isa = PBXGroup;
+			children = (
+				30C161E2241385F900BE33C3 /* StackWithTwoQueues.h */,
+				30C161E3241385F900BE33C3 /* StackWithTwoQueues.m */,
+			);
+			name = "两个队列->栈";
+			path = "../../手写链表/手写链表/两个队列->栈";
+			sourceTree = "<group>";
+		};
+		30C161E4241385F900BE33C3 /* 线程死锁分析 */ = {
+			isa = PBXGroup;
+			children = (
+				30C161E5241385F900BE33C3 /* ViewController+DeadLock.h */,
+				30C161E6241385F900BE33C3 /* ViewController+DeadLock.m */,
+			);
+			name = "线程死锁分析";
+			path = "../../手写链表/手写链表/线程死锁分析";
+			sourceTree = "<group>";
+		};
+		30C161E7241385F900BE33C3 /* 包含Min函数的栈 */ = {
+			isa = PBXGroup;
+			children = (
+				30C161E8241385F900BE33C3 /* CustomStack.m */,
+				30C161E9241385F900BE33C3 /* CustomStack.h */,
+			);
+			name = "包含Min函数的栈";
+			path = "../../手写链表/手写链表/包含Min函数的栈";
+			sourceTree = "<group>";
+		};
+		30C161EA241385F900BE33C3 /* 两个栈->队列 */ = {
+			isa = PBXGroup;
+			children = (
+				30C161EB241385F900BE33C3 /* QueueWithTwoStacks.m */,
+				30C161EC241385F900BE33C3 /* QueueWithTwoStacks.h */,
+			);
+			name = "两个栈->队列";
+			path = "../../手写链表/手写链表/两个栈->队列";
+			sourceTree = "<group>";
+		};
+		30C161ED241385F900BE33C3 /* 链表的常规操作 */ = {
+			isa = PBXGroup;
+			children = (
+				30C161EE241385F900BE33C3 /* LinkList.m */,
+				30C161EF241385F900BE33C3 /* LinkNode.h */,
+				30C161F0241385F900BE33C3 /* LinkList.h */,
+				30C161F1241385F900BE33C3 /* LinkNode.m */,
+			);
+			name = "链表的常规操作";
+			path = "../../手写链表/手写链表/链表的常规操作";
+			sourceTree = "<group>";
+		};
+		30C161FE2413860100BE33C3 /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				30C161FF2413860100BE33C3 /* LeetCodeDemo.m */,
+				30C162002413860100BE33C3 /* LeetCodeDemo.h */,
+			);
+			name = LeetCode;
+			path = "../../手写链表/手写链表/LeetCode";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30C161A52413858B00BE33C3 /* SingleLinkedList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C161BF2413858C00BE33C3 /* Build configuration list for PBXNativeTarget "SingleLinkedList" */;
+			buildPhases = (
+				30C161A22413858B00BE33C3 /* Sources */,
+				30C161A32413858B00BE33C3 /* Frameworks */,
+				30C161A42413858B00BE33C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SingleLinkedList;
+			productName = SingleLinkedList;
+			productReference = 30C161A62413858B00BE33C3 /* SingleLinkedList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30C1619E2413858B00BE33C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = majianjie;
+				TargetAttributes = {
+					30C161A52413858B00BE33C3 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 30C161A12413858B00BE33C3 /* Build configuration list for PBXProject "SingleLinkedList" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30C1619D2413858B00BE33C3;
+			productRefGroup = 30C161A72413858B00BE33C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30C161A52413858B00BE33C3 /* SingleLinkedList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30C161A42413858B00BE33C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C161B92413858C00BE33C3 /* LaunchScreen.storyboard in Resources */,
+				30C161B62413858C00BE33C3 /* Assets.xcassets in Resources */,
+				30C161B42413858B00BE33C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30C161A22413858B00BE33C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C161F6241385F900BE33C3 /* MergeSort.m in Sources */,
+				30C161F8241385F900BE33C3 /* StackWithTwoQueues.m in Sources */,
+				30C161B12413858B00BE33C3 /* ViewController.m in Sources */,
+				30C161F4241385F900BE33C3 /* BinarySearch.m in Sources */,
+				30C161AB2413858B00BE33C3 /* AppDelegate.m in Sources */,
+				30C161F9241385F900BE33C3 /* ViewController+DeadLock.m in Sources */,
+				30C161FA241385F900BE33C3 /* CustomStack.m in Sources */,
+				30C162012413860100BE33C3 /* LeetCodeDemo.m in Sources */,
+				30C161FB241385F900BE33C3 /* QueueWithTwoStacks.m in Sources */,
+				30C161F7241385F900BE33C3 /* BTreeNode.m in Sources */,
+				30C161FD241385F900BE33C3 /* LinkNode.m in Sources */,
+				30C161FC241385F900BE33C3 /* LinkList.m in Sources */,
+				30C161F5241385F900BE33C3 /* QuickSort.m in Sources */,
+				30C161F3241385F900BE33C3 /* BubblingSort.m in Sources */,
+				30C161BC2413858C00BE33C3 /* main.m in Sources */,
+				30C161AE2413858B00BE33C3 /* SceneDelegate.m in Sources */,
+				30C161F2241385F900BE33C3 /* BaseSortArray.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30C161B22413858B00BE33C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C161B32413858B00BE33C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30C161B72413858C00BE33C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C161B82413858C00BE33C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30C161BD2413858C00BE33C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30C161BE2413858C00BE33C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30C161C02413858C00BE33C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT9X6T7X5V;
+				INFOPLIST_FILE = SingleLinkedList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qihoo.iotadv.SingleLinkedList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30C161C12413858C00BE33C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT9X6T7X5V;
+				INFOPLIST_FILE = SingleLinkedList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qihoo.iotadv.SingleLinkedList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30C161A12413858B00BE33C3 /* Build configuration list for PBXProject "SingleLinkedList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C161BD2413858C00BE33C3 /* Debug */,
+				30C161BE2413858C00BE33C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C161BF2413858C00BE33C3 /* Build configuration list for PBXNativeTarget "SingleLinkedList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C161C02413858C00BE33C3 /* Debug */,
+				30C161C12413858C00BE33C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30C1619E2413858B00BE33C3 /* Project object */;
+}
