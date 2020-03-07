@@ -326,6 +326,29 @@ int tolowerChar(int c)
 }
 
 
+- (NSMutableArray *)getSum:(NSArray *)array target:(int)target{
+    
+    NSMutableArray *indexs = [NSMutableArray array];
+    
+    NSMutableDictionary *has = [NSMutableDictionary dictionary];
+    
+    for (int i = 0; i < array.count; i++) {
+        NSString *key = [NSString stringWithFormat:@"%@",array[i]];
+        if ([has.allKeys containsObject:key]) {
+            [indexs addObject:@(i)];
+            NSString *key = [NSString stringWithFormat:@"%@",array[i]];
+            [indexs addObject:[has valueForKey:key]];
+            return indexs;
+        }
+        NSString *newKey = [NSString stringWithFormat:@"%d",target - [array[i] intValue]];
+        // 将数据存入 value为下标 key为补数
+        [has setValue:@(i) forKey:newKey];
+    }
+    
+    return indexs;
+    
+}
+
 
 
 @end

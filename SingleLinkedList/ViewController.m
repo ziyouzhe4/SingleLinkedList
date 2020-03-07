@@ -206,7 +206,7 @@
 
 
 // 8. 求字符串中字符个数
-    NSLog(@"%d", [self convertToInt:@"马a建杰"]);
+//    NSLog(@"%d", [self convertToInt:@"马a建杰"]);
 //    NSLog(@"%d", [self intSum:@"1是23"]);
 
 
@@ -309,8 +309,18 @@
 //    [self quickSortLeft:0 right:(int)array.count - 1];
 
 
-    [leetcode findAppearOnceminIndex:nil];
+//    [leetcode findAppearOnceminIndex:nil];
 
+    
+//    15.两数之和
+    int sum = 7;
+    NSArray *array = @[@(1),@(2),@(3),@(4)];
+    NSMutableArray *indexs = [leetcode getSum:array target:sum];
+    if (indexs.count == 2) {
+        NSLog(@"%@ 中之和为 %d 的下标为：  %@ %@",array,sum,indexs[1],indexs[0]);
+    }else{
+        NSLog(@"没有符合条件");
+    }
 }
 
 
