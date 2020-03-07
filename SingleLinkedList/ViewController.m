@@ -41,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-// 0. 初始化链表
+#pragma mark 0. 初始化链表
 
 //        LinkList *list = [[LinkList alloc] init];
 //
@@ -57,7 +57,7 @@
 
 
 
-// 1. 求链表中倒数第k个结点
+#pragma mark 1. 求链表中倒数第k个结点
 
 //       LinkNode *targetNode = [list findkThNode:[list headNode] k:3];
 //        if (targetNode) {
@@ -67,7 +67,7 @@
 //        }
 
 
-// 2. 单链表反转
+#pragma mark 2. 单链表反转
 
 //        [list reverse];
 //        LinkNode *newHeadNode = [list headNode];
@@ -77,19 +77,19 @@
 //        }
 
 
-// 3. 单链表是否有环
+#pragma mark 3. 单链表是否有环
 
 //   int isCircle = [list isCircleExist:[list headNode]];
 //    NSLog(@"链表 %@", isCircle ? @"有环" : @"无环");
 
     
-// 4. 判断两个单链表是否相交
+#pragma mark 4. 判断两个单链表是否相交
 
 //    LinkNode *crossNode = [list isCross:[list headNode] list2:[list2 headNode]];
 //    NSLog(@"list 和 list2 链表 的交点是 : %@",crossNode.value);
 
 
-// 5. 合并两个有序的链表
+#pragma mark 5. 合并两个有序的链表
 
 //    LinkList *list = [[LinkList alloc] init];
 //    for (int i = 1; i <= 5; i++) {
@@ -109,7 +109,7 @@
 //    }
 
 
-// 6. 包含min函数的栈
+#pragma mark 6. 包含min函数的栈
 
 //    CustomStack *stack = [[CustomStack alloc] init];
 //
@@ -126,7 +126,7 @@
 //    NSLog(@"stack 最小值是: %@",[stack stackWithMinMin]);
 
 
-// 5. 用两个栈实现队列操作
+#pragma mark 7. 用两个栈实现队列操作
 //
 //    QueueWithTwoStacks *stack = [[QueueWithTwoStacks alloc] init];
 //
@@ -148,7 +148,7 @@
 
 
 
-// 6. 两个队列实现一个栈结构
+#pragma mark 8. 两个队列实现一个栈结构
 
 //    StackWithTwoQueues *queue = [[StackWithTwoQueues alloc] init];
 //
@@ -165,7 +165,7 @@
 //    [queue pop];
 
 
-// 7.0 二分法查找
+#pragma mark 9.0 二分法查找
 //    BinarySearch *search = [[BinarySearch alloc] init];
 //    int index = [search searchNum:40];
 //    NSString *str = @"";
@@ -177,25 +177,22 @@
 //
 //    NSLog(@"%@ ",str);
 
-// 7.1 快排
-
+#pragma mark 9.1 快排
 //    QuickSort *quickSort = [[QuickSort alloc] init];
 //    NSMutableArray *quickedSort = [quickSort sort];
 //    [self sortArray:quickedSort title:@"快速"];
 
 
-// 7.2 归并排序
-
+#pragma mark 9.2 归并排序
 //    MergeSort *mergeSort = [[MergeSort alloc] init];
 //    NSMutableArray *mergedSort = [mergeSort sort];
 //    [self sortArray:mergedSort title:@"归并"];
 
 
-// 7.3 冒泡排序
+#pragma mark 9.3 冒泡排序
 //    BubblingSort *bubbSort = [[BubblingSort alloc] init];
 //    NSMutableArray *bubbedSort = [bubbSort sort];
 //    [self sortArray:bubbedSort title:@"冒泡"];
-
 
 
 //    self.array =  [NSMutableArray arrayWithObjects:@"8",@"6",@"7", nil];
@@ -203,45 +200,36 @@
 
 //    NSLog(@"%@",self.array);
 
-
-
-// 8. 求字符串中字符个数
+#pragma mark 10. 求字符串中字符个数
 //    NSLog(@"%d", [self convertToInt:@"马a建杰"]);
 //    NSLog(@"%d", [self intSum:@"1是23"]);
 
-
-// 9. 二叉树遍历
-
+#pragma mark 9. 二叉树遍历
 //    BTreeNode *btree = [[BTreeNode alloc] init];
 //    [btree createBTree];
 
-
-// 10. leetcode
-
+#pragma mark 11. 求一个字符串中出现最多字符的个数
     LeetCodeDemo *leetcode = [LeetCodeDemo new];
-//    [leetcode mostTimesOfCharacter];
+    [leetcode mostTimesOfCharacter];
 
-// 11 .最大子序列和
-
+#pragma mark 12 .最大子序列和
 //    NSArray *array = [NSArray arrayWithObjects:@"4",@"0",@"2",@"-5",@"3", nil];
 //    [leetcode maxSubArray:array];
 
-
-// 12. 斐波那契数列(非递归)
+#pragma mark 13. 斐波那契数列(非递归)
+//
 //    LeetCodeDemo *leetcode = [LeetCodeDemo new];
 //    NSLog(@"非递归结果 %d",[leetcode fibonacci:9]);
 
-// 13. 输入一个数组，把所有奇数放到所有偶数前面
-
-//    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"2",@"3",@"1",@"6",@"5", nil];
+#pragma mark 14. 输入一个数组，把所有奇数放到所有偶数前面
+    
+//   NSMutableArray *array = [NSMutableArray arrayWithObjects:@"2",@"3",@"1",@"6",@"5", nil];
 //    [leetcode makeOddnumberToFontOfEvennumber:array];
-
 
 //    [leetcode findSameStrinArray];
 
 
-// 14. 河北两个数组后 找相同元素
-
+#pragma mark 15. 合并两个数组后 找相同元素
 //    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"2",@"0",@"1",@"6",@"5",@"4",@"9",@"3", nil];
 //    NSMutableArray *array2 = [NSMutableArray arrayWithObjects:@"9",@"7",@"6",@"5",@"2", nil];
 //
@@ -312,17 +300,64 @@
 //    [leetcode findAppearOnceminIndex:nil];
 
     
-//    15.两数之和
-    int sum = 7;
-    NSArray *array = @[@(1),@(2),@(3),@(4)];
-    NSMutableArray *indexs = [leetcode getSum:array target:sum];
-    if (indexs.count == 2) {
-        NSLog(@"%@ 中之和为 %d 的下标为：  %@ %@",array,sum,indexs[1],indexs[0]);
-    }else{
-        NSLog(@"没有符合条件");
-    }
+#pragma mark 16.两数之和
+//    int sum = 7;
+//    NSArray *array = @[@(1),@(2),@(3),@(4)];
+//    NSMutableArray *indexs = [leetcode getSum:array target:sum];
+//    if (indexs.count == 2) {
+//        NSLog(@"%@ 中之和为 %d 的下标为：  %@ %@",array,sum,indexs[1],indexs[0]);
+//    }else{
+//        NSLog(@"没有符合条件");
+//    }
+    
+#pragma mark 17.给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点
+//    LinkList *list = [[LinkList alloc] init];
+//
+//    for (int i = 1; i <= 6; i++) {
+//        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
+//        [list insertNode:node];
+//    }
+//
+//    NSLog(@"操作前 :");
+//    [self printLinkList:list.headNode];
+//    LinkNode *head = [self removeNthFromEnd:list.headNode n:4];
+//    NSLog(@"操作后 :");
+//    [self printLinkList:head];
+    
+    
 }
 
+- (LinkNode *)removeNthFromEnd:(LinkNode *)head n:(int)n{
+    LinkNode *rec = [[LinkNode alloc] init];
+    rec->next = head;
+    
+    LinkNode *p=rec;
+    LinkNode *q=head;
+    for(int i=1;i<=n;i++){
+        q=q->next;
+    }
+    while(q!=nil){
+        p=p->next;
+        q=q->next;
+    }
+    p->next=p->next->next;
+    return rec->next;
+    
+}
+
+- (void)printLinkList:(LinkNode *)head{
+    
+    if (!head) {
+        return;
+    }
+    
+    while (head != nil) {
+        NSLog(@"%@",head.value);
+        head=head->next;
+    }
+    
+    
+}
 
 
 - (void)sortArray:(NSMutableArray *)array title:(NSString *)title{

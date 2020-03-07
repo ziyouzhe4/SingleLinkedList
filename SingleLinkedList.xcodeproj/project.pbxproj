@@ -126,8 +126,8 @@
 		300C2ECC2413890F0016B650 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
-				300C2ECD2413890F0016B650 /* LeetCodeDemo.m */,
 				300C2ECE2413890F0016B650 /* LeetCodeDemo.h */,
+				300C2ECD2413890F0016B650 /* LeetCodeDemo.m */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
