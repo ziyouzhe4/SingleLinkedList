@@ -1,9 +1,9 @@
 //
 //  ViewController.m
-//  SingleLinkedList
+//  手写链表
 //
-//  Created by majianjie on 2020/3/7.
-//  Copyright © 2020 majianjie. All rights reserved.
+//  Created by majianjie on 2018/5/6.
+//  Copyright © 2018年 majianjie. All rights reserved.
 //
 
 #import "ViewController.h"

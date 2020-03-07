@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>3ED6B40B-26F6-4361-8935-E88AD0F79870</key>
+		<key>4E4B0237-736B-4158-8B02-B5C0983479A8</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,109 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>3ED6B40B-26F6-4361-8935-E88AD0F79870.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SingleLinkedList project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SingleLinkedList</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SingleLinkedList</string>
-			<key>timeStartedRecording</key>
-			<real>605259390.68909705</real>
-			<key>timeStoppedRecording</key>
-			<real>605259390.73227406</real>
-			<key>title</key>
-			<string>Build SingleLinkedList</string>
-			<key>uniqueIdentifier</key>
-			<string>3ED6B40B-26F6-4361-8935-E88AD0F79870</string>
-		</dict>
-		<key>79AB3C29-6C02-4F47-9102-501C5CEA5E1C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>79AB3C29-6C02-4F47-9102-501C5CEA5E1C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SingleLinkedList project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SingleLinkedList</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Clean SingleLinkedList</string>
-			<key>timeStartedRecording</key>
-			<real>605259452.354702</real>
-			<key>timeStoppedRecording</key>
-			<real>605259452.372787</real>
-			<key>title</key>
-			<string>Clean SingleLinkedList</string>
-			<key>uniqueIdentifier</key>
-			<string>79AB3C29-6C02-4F47-9102-501C5CEA5E1C</string>
-		</dict>
-		<key>AF65485B-58F8-4152-8D32-3C335E927A62</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>AF65485B-58F8-4152-8D32-3C335E927A62.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SingleLinkedList project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SingleLinkedList</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Clean SingleLinkedList</string>
-			<key>timeStartedRecording</key>
-			<real>605259424.93285596</real>
-			<key>timeStoppedRecording</key>
-			<real>605259424.96083295</real>
-			<key>title</key>
-			<string>Clean SingleLinkedList</string>
-			<key>uniqueIdentifier</key>
-			<string>AF65485B-58F8-4152-8D32-3C335E927A62</string>
-		</dict>
-		<key>B4F7BD9F-B12A-46B1-9862-3BB4EB426764</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B4F7BD9F-B12A-46B1-9862-3BB4EB426764.xcactivitylog</string>
+			<string>4E4B0237-736B-4158-8B02-B5C0983479A8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -134,15 +32,15 @@
 			<key>signature</key>
 			<string>Build SingleLinkedList</string>
 			<key>timeStartedRecording</key>
-			<real>605259275.76551795</real>
+			<real>605260050.25775194</real>
 			<key>timeStoppedRecording</key>
-			<real>605259275.81546605</real>
+			<real>605260051.04734898</real>
 			<key>title</key>
 			<string>Build SingleLinkedList</string>
 			<key>uniqueIdentifier</key>
-			<string>B4F7BD9F-B12A-46B1-9862-3BB4EB426764</string>
+			<string>4E4B0237-736B-4158-8B02-B5C0983479A8</string>
 		</dict>
-		<key>F73D40BF-BF25-44F1-9B68-70A938F8A5A1</key>
+		<key>72AEF17B-A904-4E08-81E1-420CBFA2689D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -151,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>F73D40BF-BF25-44F1-9B68-70A938F8A5A1.xcactivitylog</string>
+			<string>72AEF17B-A904-4E08-81E1-420CBFA2689D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -168,13 +66,47 @@
 			<key>signature</key>
 			<string>Build SingleLinkedList</string>
 			<key>timeStartedRecording</key>
-			<real>605259427.11162901</real>
+			<real>605260029.85557795</real>
 			<key>timeStoppedRecording</key>
-			<real>605259427.26588094</real>
+			<real>605260032.12845302</real>
 			<key>title</key>
 			<string>Build SingleLinkedList</string>
 			<key>uniqueIdentifier</key>
-			<string>F73D40BF-BF25-44F1-9B68-70A938F8A5A1</string>
+			<string>72AEF17B-A904-4E08-81E1-420CBFA2689D</string>
+		</dict>
+		<key>BF11E038-09B1-426A-A70E-29F5B6AED836</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BF11E038-09B1-426A-A70E-29F5B6AED836.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>SingleLinkedList project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SingleLinkedList</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SingleLinkedList</string>
+			<key>timeStartedRecording</key>
+			<real>605260053.73902595</real>
+			<key>timeStoppedRecording</key>
+			<real>605260053.82562995</real>
+			<key>title</key>
+			<string>Build SingleLinkedList</string>
+			<key>uniqueIdentifier</key>
+			<string>BF11E038-09B1-426A-A70E-29F5B6AED836</string>
 		</dict>
 	</dict>
 </dict>

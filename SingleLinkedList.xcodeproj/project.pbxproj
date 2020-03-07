@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300C2EE02413890F0016B650 /* ViewController+DeadLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2EC02413890F0016B650 /* ViewController+DeadLock.m */; };
+		300C2EE12413890F0016B650 /* BaseSortArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2EC52413890F0016B650 /* BaseSortArray.m */; };
+		300C2EE22413890F0016B650 /* BubblingSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2EC72413890F0016B650 /* BubblingSort.m */; };
+		300C2EE32413890F0016B650 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2EC82413890F0016B650 /* BinarySearch.m */; };
+		300C2EE42413890F0016B650 /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2EC92413890F0016B650 /* QuickSort.m */; };
+		300C2EE52413890F0016B650 /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2ECA2413890F0016B650 /* MergeSort.m */; };
+		300C2EE62413890F0016B650 /* LeetCodeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2ECD2413890F0016B650 /* LeetCodeDemo.m */; };
+		300C2EE72413890F0016B650 /* StackWithTwoQueues.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2ED12413890F0016B650 /* StackWithTwoQueues.m */; };
+		300C2EE82413890F0016B650 /* BTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2ED32413890F0016B650 /* BTreeNode.m */; };
+		300C2EE92413890F0016B650 /* CustomStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2ED62413890F0016B650 /* CustomStack.m */; };
+		300C2EEA2413890F0016B650 /* QueueWithTwoStacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2ED92413890F0016B650 /* QueueWithTwoStacks.m */; };
+		300C2EEB2413890F0016B650 /* LinkList.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2EDC2413890F0016B650 /* LinkList.m */; };
+		300C2EEC2413890F0016B650 /* LinkNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2EDF2413890F0016B650 /* LinkNode.m */; };
 		30C161AB2413858B00BE33C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161AA2413858B00BE33C3 /* AppDelegate.m */; };
 		30C161AE2413858B00BE33C3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161AD2413858B00BE33C3 /* SceneDelegate.m */; };
 		30C161B12413858B00BE33C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161B02413858B00BE33C3 /* ViewController.m */; };
@@ -14,22 +27,35 @@
 		30C161B62413858C00BE33C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C161B52413858C00BE33C3 /* Assets.xcassets */; };
 		30C161B92413858C00BE33C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C161B72413858C00BE33C3 /* LaunchScreen.storyboard */; };
 		30C161BC2413858C00BE33C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161BB2413858C00BE33C3 /* main.m */; };
-		30C161F2241385F900BE33C3 /* BaseSortArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161D7241385F900BE33C3 /* BaseSortArray.m */; };
-		30C161F3241385F900BE33C3 /* BubblingSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161D9241385F900BE33C3 /* BubblingSort.m */; };
-		30C161F4241385F900BE33C3 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161DA241385F900BE33C3 /* BinarySearch.m */; };
-		30C161F5241385F900BE33C3 /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161DB241385F900BE33C3 /* QuickSort.m */; };
-		30C161F6241385F900BE33C3 /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161DC241385F900BE33C3 /* MergeSort.m */; };
-		30C161F7241385F900BE33C3 /* BTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161DF241385F900BE33C3 /* BTreeNode.m */; };
-		30C161F8241385F900BE33C3 /* StackWithTwoQueues.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161E3241385F900BE33C3 /* StackWithTwoQueues.m */; };
-		30C161F9241385F900BE33C3 /* ViewController+DeadLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161E6241385F900BE33C3 /* ViewController+DeadLock.m */; };
-		30C161FA241385F900BE33C3 /* CustomStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161E8241385F900BE33C3 /* CustomStack.m */; };
-		30C161FB241385F900BE33C3 /* QueueWithTwoStacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161EB241385F900BE33C3 /* QueueWithTwoStacks.m */; };
-		30C161FC241385F900BE33C3 /* LinkList.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161EE241385F900BE33C3 /* LinkList.m */; };
-		30C161FD241385F900BE33C3 /* LinkNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161F1241385F900BE33C3 /* LinkNode.m */; };
-		30C162012413860100BE33C3 /* LeetCodeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161FF2413860100BE33C3 /* LeetCodeDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300C2EBF2413890F0016B650 /* ViewController+DeadLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+DeadLock.h"; sourceTree = "<group>"; };
+		300C2EC02413890F0016B650 /* ViewController+DeadLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+DeadLock.m"; sourceTree = "<group>"; };
+		300C2EC22413890F0016B650 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearch.h; sourceTree = "<group>"; };
+		300C2EC32413890F0016B650 /* BubblingSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubblingSort.h; sourceTree = "<group>"; };
+		300C2EC42413890F0016B650 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		300C2EC52413890F0016B650 /* BaseSortArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSortArray.m; sourceTree = "<group>"; };
+		300C2EC62413890F0016B650 /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
+		300C2EC72413890F0016B650 /* BubblingSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubblingSort.m; sourceTree = "<group>"; };
+		300C2EC82413890F0016B650 /* BinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearch.m; sourceTree = "<group>"; };
+		300C2EC92413890F0016B650 /* QuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSort.m; sourceTree = "<group>"; };
+		300C2ECA2413890F0016B650 /* MergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeSort.m; sourceTree = "<group>"; };
+		300C2ECB2413890F0016B650 /* BaseSortArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSortArray.h; sourceTree = "<group>"; };
+		300C2ECD2413890F0016B650 /* LeetCodeDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeetCodeDemo.m; sourceTree = "<group>"; };
+		300C2ECE2413890F0016B650 /* LeetCodeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeetCodeDemo.h; sourceTree = "<group>"; };
+		300C2ED02413890F0016B650 /* StackWithTwoQueues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackWithTwoQueues.h; sourceTree = "<group>"; };
+		300C2ED12413890F0016B650 /* StackWithTwoQueues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackWithTwoQueues.m; sourceTree = "<group>"; };
+		300C2ED32413890F0016B650 /* BTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTreeNode.m; sourceTree = "<group>"; };
+		300C2ED42413890F0016B650 /* BTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTreeNode.h; sourceTree = "<group>"; };
+		300C2ED62413890F0016B650 /* CustomStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomStack.m; sourceTree = "<group>"; };
+		300C2ED72413890F0016B650 /* CustomStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStack.h; sourceTree = "<group>"; };
+		300C2ED92413890F0016B650 /* QueueWithTwoStacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueWithTwoStacks.m; sourceTree = "<group>"; };
+		300C2EDA2413890F0016B650 /* QueueWithTwoStacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueWithTwoStacks.h; sourceTree = "<group>"; };
+		300C2EDC2413890F0016B650 /* LinkList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkList.m; sourceTree = "<group>"; };
+		300C2EDD2413890F0016B650 /* LinkNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkNode.h; sourceTree = "<group>"; };
+		300C2EDE2413890F0016B650 /* LinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
+		300C2EDF2413890F0016B650 /* LinkNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkNode.m; sourceTree = "<group>"; };
 		30C161A62413858B00BE33C3 /* SingleLinkedList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleLinkedList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C161A92413858B00BE33C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30C161AA2413858B00BE33C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,32 +68,6 @@
 		30C161B82413858C00BE33C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30C161BA2413858C00BE33C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30C161BB2413858C00BE33C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		30C161D4241385F900BE33C3 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearch.h; sourceTree = "<group>"; };
-		30C161D5241385F900BE33C3 /* BubblingSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubblingSort.h; sourceTree = "<group>"; };
-		30C161D6241385F900BE33C3 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
-		30C161D7241385F900BE33C3 /* BaseSortArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSortArray.m; sourceTree = "<group>"; };
-		30C161D8241385F900BE33C3 /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
-		30C161D9241385F900BE33C3 /* BubblingSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubblingSort.m; sourceTree = "<group>"; };
-		30C161DA241385F900BE33C3 /* BinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearch.m; sourceTree = "<group>"; };
-		30C161DB241385F900BE33C3 /* QuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSort.m; sourceTree = "<group>"; };
-		30C161DC241385F900BE33C3 /* MergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeSort.m; sourceTree = "<group>"; };
-		30C161DD241385F900BE33C3 /* BaseSortArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSortArray.h; sourceTree = "<group>"; };
-		30C161DF241385F900BE33C3 /* BTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTreeNode.m; sourceTree = "<group>"; };
-		30C161E0241385F900BE33C3 /* BTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTreeNode.h; sourceTree = "<group>"; };
-		30C161E2241385F900BE33C3 /* StackWithTwoQueues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackWithTwoQueues.h; sourceTree = "<group>"; };
-		30C161E3241385F900BE33C3 /* StackWithTwoQueues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackWithTwoQueues.m; sourceTree = "<group>"; };
-		30C161E5241385F900BE33C3 /* ViewController+DeadLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+DeadLock.h"; sourceTree = "<group>"; };
-		30C161E6241385F900BE33C3 /* ViewController+DeadLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+DeadLock.m"; sourceTree = "<group>"; };
-		30C161E8241385F900BE33C3 /* CustomStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomStack.m; sourceTree = "<group>"; };
-		30C161E9241385F900BE33C3 /* CustomStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStack.h; sourceTree = "<group>"; };
-		30C161EB241385F900BE33C3 /* QueueWithTwoStacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueWithTwoStacks.m; sourceTree = "<group>"; };
-		30C161EC241385F900BE33C3 /* QueueWithTwoStacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueWithTwoStacks.h; sourceTree = "<group>"; };
-		30C161EE241385F900BE33C3 /* LinkList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkList.m; sourceTree = "<group>"; };
-		30C161EF241385F900BE33C3 /* LinkNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkNode.h; sourceTree = "<group>"; };
-		30C161F0241385F900BE33C3 /* LinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
-		30C161F1241385F900BE33C3 /* LinkNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkNode.m; sourceTree = "<group>"; };
-		30C161FF2413860100BE33C3 /* LeetCodeDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeetCodeDemo.m; sourceTree = "<group>"; };
-		30C162002413860100BE33C3 /* LeetCodeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeetCodeDemo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +81,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300C2EBD241388D50016B650 /* sys */ = {
+			isa = PBXGroup;
+			children = (
+				30C161A92413858B00BE33C3 /* AppDelegate.h */,
+				30C161AA2413858B00BE33C3 /* AppDelegate.m */,
+				30C161AC2413858B00BE33C3 /* SceneDelegate.h */,
+				30C161AD2413858B00BE33C3 /* SceneDelegate.m */,
+				30C161B22413858B00BE33C3 /* Main.storyboard */,
+				30C161B52413858C00BE33C3 /* Assets.xcassets */,
+				30C161B72413858C00BE33C3 /* LaunchScreen.storyboard */,
+				30C161BA2413858C00BE33C3 /* Info.plist */,
+				30C161BB2413858C00BE33C3 /* main.m */,
+			);
+			name = sys;
+			sourceTree = "<group>";
+		};
+		300C2EBE2413890F0016B650 /* 线程死锁分析 */ = {
+			isa = PBXGroup;
+			children = (
+				300C2EBF2413890F0016B650 /* ViewController+DeadLock.h */,
+				300C2EC02413890F0016B650 /* ViewController+DeadLock.m */,
+			);
+			path = "线程死锁分析";
+			sourceTree = "<group>";
+		};
+		300C2EC12413890F0016B650 /* 数组排序查找操作 */ = {
+			isa = PBXGroup;
+			children = (
+				300C2EC22413890F0016B650 /* BinarySearch.h */,
+				300C2EC32413890F0016B650 /* BubblingSort.h */,
+				300C2EC42413890F0016B650 /* QuickSort.h */,
+				300C2EC52413890F0016B650 /* BaseSortArray.m */,
+				300C2EC62413890F0016B650 /* MergeSort.h */,
+				300C2EC72413890F0016B650 /* BubblingSort.m */,
+				300C2EC82413890F0016B650 /* BinarySearch.m */,
+				300C2EC92413890F0016B650 /* QuickSort.m */,
+				300C2ECA2413890F0016B650 /* MergeSort.m */,
+				300C2ECB2413890F0016B650 /* BaseSortArray.h */,
+			);
+			path = "数组排序查找操作";
+			sourceTree = "<group>";
+		};
+		300C2ECC2413890F0016B650 /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				300C2ECD2413890F0016B650 /* LeetCodeDemo.m */,
+				300C2ECE2413890F0016B650 /* LeetCodeDemo.h */,
+			);
+			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		300C2ECF2413890F0016B650 /* 两个队列->栈 */ = {
+			isa = PBXGroup;
+			children = (
+				300C2ED02413890F0016B650 /* StackWithTwoQueues.h */,
+				300C2ED12413890F0016B650 /* StackWithTwoQueues.m */,
+			);
+			path = "两个队列->栈";
+			sourceTree = "<group>";
+		};
+		300C2ED22413890F0016B650 /* 二叉树遍历 */ = {
+			isa = PBXGroup;
+			children = (
+				300C2ED32413890F0016B650 /* BTreeNode.m */,
+				300C2ED42413890F0016B650 /* BTreeNode.h */,
+			);
+			path = "二叉树遍历";
+			sourceTree = "<group>";
+		};
+		300C2ED52413890F0016B650 /* 包含Min函数的栈 */ = {
+			isa = PBXGroup;
+			children = (
+				300C2ED62413890F0016B650 /* CustomStack.m */,
+				300C2ED72413890F0016B650 /* CustomStack.h */,
+			);
+			path = "包含Min函数的栈";
+			sourceTree = "<group>";
+		};
+		300C2ED82413890F0016B650 /* 两个栈->队列 */ = {
+			isa = PBXGroup;
+			children = (
+				300C2ED92413890F0016B650 /* QueueWithTwoStacks.m */,
+				300C2EDA2413890F0016B650 /* QueueWithTwoStacks.h */,
+			);
+			path = "两个栈->队列";
+			sourceTree = "<group>";
+		};
+		300C2EDB2413890F0016B650 /* 链表的常规操作 */ = {
+			isa = PBXGroup;
+			children = (
+				300C2EDC2413890F0016B650 /* LinkList.m */,
+				300C2EDD2413890F0016B650 /* LinkNode.h */,
+				300C2EDE2413890F0016B650 /* LinkList.h */,
+				300C2EDF2413890F0016B650 /* LinkNode.m */,
+			);
+			path = "链表的常规操作";
+			sourceTree = "<group>";
+		};
 		30C1619D2413858B00BE33C3 = {
 			isa = PBXGroup;
 			children = (
@@ -100,125 +198,19 @@
 		30C161A82413858B00BE33C3 /* SingleLinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				30C161FE2413860100BE33C3 /* LeetCode */,
-				30C161E7241385F900BE33C3 /* 包含Min函数的栈 */,
-				30C161DE241385F900BE33C3 /* 二叉树遍历 */,
-				30C161ED241385F900BE33C3 /* 链表的常规操作 */,
-				30C161E1241385F900BE33C3 /* 两个队列->栈 */,
-				30C161EA241385F900BE33C3 /* 两个栈->队列 */,
-				30C161D3241385F900BE33C3 /* 数组排序查找操作 */,
-				30C161E4241385F900BE33C3 /* 线程死锁分析 */,
-				30C161D2241385DA00BE33C3 /* New Group */,
-				30C161A92413858B00BE33C3 /* AppDelegate.h */,
-				30C161AA2413858B00BE33C3 /* AppDelegate.m */,
-				30C161AC2413858B00BE33C3 /* SceneDelegate.h */,
-				30C161AD2413858B00BE33C3 /* SceneDelegate.m */,
+				300C2ED52413890F0016B650 /* 包含Min函数的栈 */,
+				300C2ED22413890F0016B650 /* 二叉树遍历 */,
+				300C2EDB2413890F0016B650 /* 链表的常规操作 */,
+				300C2ECF2413890F0016B650 /* 两个队列->栈 */,
+				300C2ED82413890F0016B650 /* 两个栈->队列 */,
+				300C2EC12413890F0016B650 /* 数组排序查找操作 */,
+				300C2EBE2413890F0016B650 /* 线程死锁分析 */,
+				300C2ECC2413890F0016B650 /* LeetCode */,
 				30C161AF2413858B00BE33C3 /* ViewController.h */,
 				30C161B02413858B00BE33C3 /* ViewController.m */,
-				30C161B22413858B00BE33C3 /* Main.storyboard */,
-				30C161B52413858C00BE33C3 /* Assets.xcassets */,
-				30C161B72413858C00BE33C3 /* LaunchScreen.storyboard */,
-				30C161BA2413858C00BE33C3 /* Info.plist */,
-				30C161BB2413858C00BE33C3 /* main.m */,
+				300C2EBD241388D50016B650 /* sys */,
 			);
 			path = SingleLinkedList;
-			sourceTree = "<group>";
-		};
-		30C161D2241385DA00BE33C3 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		30C161D3241385F900BE33C3 /* 数组排序查找操作 */ = {
-			isa = PBXGroup;
-			children = (
-				30C161D4241385F900BE33C3 /* BinarySearch.h */,
-				30C161D5241385F900BE33C3 /* BubblingSort.h */,
-				30C161D6241385F900BE33C3 /* QuickSort.h */,
-				30C161D7241385F900BE33C3 /* BaseSortArray.m */,
-				30C161D8241385F900BE33C3 /* MergeSort.h */,
-				30C161D9241385F900BE33C3 /* BubblingSort.m */,
-				30C161DA241385F900BE33C3 /* BinarySearch.m */,
-				30C161DB241385F900BE33C3 /* QuickSort.m */,
-				30C161DC241385F900BE33C3 /* MergeSort.m */,
-				30C161DD241385F900BE33C3 /* BaseSortArray.h */,
-			);
-			name = "数组排序查找操作";
-			path = "../../手写链表/手写链表/数组排序查找操作";
-			sourceTree = "<group>";
-		};
-		30C161DE241385F900BE33C3 /* 二叉树遍历 */ = {
-			isa = PBXGroup;
-			children = (
-				30C161DF241385F900BE33C3 /* BTreeNode.m */,
-				30C161E0241385F900BE33C3 /* BTreeNode.h */,
-			);
-			name = "二叉树遍历";
-			path = "../../手写链表/手写链表/二叉树遍历";
-			sourceTree = "<group>";
-		};
-		30C161E1241385F900BE33C3 /* 两个队列->栈 */ = {
-			isa = PBXGroup;
-			children = (
-				30C161E2241385F900BE33C3 /* StackWithTwoQueues.h */,
-				30C161E3241385F900BE33C3 /* StackWithTwoQueues.m */,
-			);
-			name = "两个队列->栈";
-			path = "../../手写链表/手写链表/两个队列->栈";
-			sourceTree = "<group>";
-		};
-		30C161E4241385F900BE33C3 /* 线程死锁分析 */ = {
-			isa = PBXGroup;
-			children = (
-				30C161E5241385F900BE33C3 /* ViewController+DeadLock.h */,
-				30C161E6241385F900BE33C3 /* ViewController+DeadLock.m */,
-			);
-			name = "线程死锁分析";
-			path = "../../手写链表/手写链表/线程死锁分析";
-			sourceTree = "<group>";
-		};
-		30C161E7241385F900BE33C3 /* 包含Min函数的栈 */ = {
-			isa = PBXGroup;
-			children = (
-				30C161E8241385F900BE33C3 /* CustomStack.m */,
-				30C161E9241385F900BE33C3 /* CustomStack.h */,
-			);
-			name = "包含Min函数的栈";
-			path = "../../手写链表/手写链表/包含Min函数的栈";
-			sourceTree = "<group>";
-		};
-		30C161EA241385F900BE33C3 /* 两个栈->队列 */ = {
-			isa = PBXGroup;
-			children = (
-				30C161EB241385F900BE33C3 /* QueueWithTwoStacks.m */,
-				30C161EC241385F900BE33C3 /* QueueWithTwoStacks.h */,
-			);
-			name = "两个栈->队列";
-			path = "../../手写链表/手写链表/两个栈->队列";
-			sourceTree = "<group>";
-		};
-		30C161ED241385F900BE33C3 /* 链表的常规操作 */ = {
-			isa = PBXGroup;
-			children = (
-				30C161EE241385F900BE33C3 /* LinkList.m */,
-				30C161EF241385F900BE33C3 /* LinkNode.h */,
-				30C161F0241385F900BE33C3 /* LinkList.h */,
-				30C161F1241385F900BE33C3 /* LinkNode.m */,
-			);
-			name = "链表的常规操作";
-			path = "../../手写链表/手写链表/链表的常规操作";
-			sourceTree = "<group>";
-		};
-		30C161FE2413860100BE33C3 /* LeetCode */ = {
-			isa = PBXGroup;
-			children = (
-				30C161FF2413860100BE33C3 /* LeetCodeDemo.m */,
-				30C162002413860100BE33C3 /* LeetCodeDemo.h */,
-			);
-			name = LeetCode;
-			path = "../../手写链表/手写链表/LeetCode";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,23 +283,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30C161F6241385F900BE33C3 /* MergeSort.m in Sources */,
-				30C161F8241385F900BE33C3 /* StackWithTwoQueues.m in Sources */,
+				300C2EEA2413890F0016B650 /* QueueWithTwoStacks.m in Sources */,
+				300C2EE52413890F0016B650 /* MergeSort.m in Sources */,
+				300C2EE82413890F0016B650 /* BTreeNode.m in Sources */,
 				30C161B12413858B00BE33C3 /* ViewController.m in Sources */,
-				30C161F4241385F900BE33C3 /* BinarySearch.m in Sources */,
+				300C2EE62413890F0016B650 /* LeetCodeDemo.m in Sources */,
+				300C2EE72413890F0016B650 /* StackWithTwoQueues.m in Sources */,
+				300C2EE22413890F0016B650 /* BubblingSort.m in Sources */,
+				300C2EE02413890F0016B650 /* ViewController+DeadLock.m in Sources */,
 				30C161AB2413858B00BE33C3 /* AppDelegate.m in Sources */,
-				30C161F9241385F900BE33C3 /* ViewController+DeadLock.m in Sources */,
-				30C161FA241385F900BE33C3 /* CustomStack.m in Sources */,
-				30C162012413860100BE33C3 /* LeetCodeDemo.m in Sources */,
-				30C161FB241385F900BE33C3 /* QueueWithTwoStacks.m in Sources */,
-				30C161F7241385F900BE33C3 /* BTreeNode.m in Sources */,
-				30C161FD241385F900BE33C3 /* LinkNode.m in Sources */,
-				30C161FC241385F900BE33C3 /* LinkList.m in Sources */,
-				30C161F5241385F900BE33C3 /* QuickSort.m in Sources */,
-				30C161F3241385F900BE33C3 /* BubblingSort.m in Sources */,
+				300C2EE42413890F0016B650 /* QuickSort.m in Sources */,
+				300C2EE92413890F0016B650 /* CustomStack.m in Sources */,
+				300C2EE32413890F0016B650 /* BinarySearch.m in Sources */,
 				30C161BC2413858C00BE33C3 /* main.m in Sources */,
+				300C2EE12413890F0016B650 /* BaseSortArray.m in Sources */,
 				30C161AE2413858B00BE33C3 /* SceneDelegate.m in Sources */,
-				30C161F2241385F900BE33C3 /* BaseSortArray.m in Sources */,
+				300C2EEB2413890F0016B650 /* LinkList.m in Sources */,
+				300C2EEC2413890F0016B650 /* LinkNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
