@@ -51,15 +51,12 @@
 //        }
 //
 //        LinkList *list2 = [[LinkList alloc] init];
-//
 //        [list2 insertNode:[[LinkNode alloc] initWithKey:@"0" value:@"000"]];
-
-
 
 
 #pragma mark 1. 求链表中倒数第k个结点
 
-//       LinkNode *targetNode = [list findkThNode:[list headNode] k:3];
+//       LinkNode *targetNode = [list findkThNode:list.headNode k:3];
 //        if (targetNode) {
 //            NSLog(@"%@ %@",targetNode.key,targetNode.value);
 //        }else{
@@ -79,10 +76,9 @@
 
 #pragma mark 3. 单链表是否有环
 
-//   int isCircle = [list isCircleExist:[list headNode]];
+//    int isCircle = [list isCircleExist:[list headNode]];
 //    NSLog(@"链表 %@", isCircle ? @"有环" : @"无环");
 
-    
 #pragma mark 4. 判断两个单链表是否相交
 
 //    LinkNode *crossNode = [list isCross:[list headNode] list2:[list2 headNode]];
@@ -91,22 +87,22 @@
 
 #pragma mark 5. 合并两个有序的链表
 
-//    LinkList *list = [[LinkList alloc] init];
-//    for (int i = 1; i <= 5; i++) {
-//        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
-//        [list insertNode:node];
-//    }
-//    LinkList *list2 = [[LinkList alloc] init];
-//    for (int i = 6; i <= 9; i++) {
-//        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
-//        [list2 insertNode:node];
-//    }
-//
-//    LinkNode *mergeHeadNode = [list mergeSortedList:[list headNode] otherNode:[list2 headNode]];
-//    while (mergeHeadNode) {
-//        NSLog(@"合并后值为 : %@",mergeHeadNode.value);
-//        mergeHeadNode = mergeHeadNode->next;
-//    }
+    LinkList *list = [[LinkList alloc] init];
+    for (int i = 1; i <= 5; i++) {
+        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
+        [list insertNode:node];
+    }
+    LinkList *list2 = [[LinkList alloc] init];
+    for (int i = 6; i <= 9; i++) {
+        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
+        [list2 insertNode:node];
+    }
+
+    LinkNode *mergeHeadNode = [list mergeSortedList:[list headNode] otherNode:[list2 headNode]];
+    while (mergeHeadNode) {
+        NSLog(@"合并后值为 : %@",mergeHeadNode.value);
+        mergeHeadNode = mergeHeadNode->next;
+    }
 
 
 #pragma mark 6. 包含min函数的栈
@@ -209,8 +205,8 @@
 //    [btree createBTree];
 
 #pragma mark 11. 求一个字符串中出现最多字符的个数
-    LeetCodeDemo *leetcode = [LeetCodeDemo new];
-    [leetcode mostTimesOfCharacter];
+//    LeetCodeDemo *leetcode = [LeetCodeDemo new];
+//    [leetcode mostTimesOfCharacter];
 
 #pragma mark 12 .最大子序列和
 //    NSArray *array = [NSArray arrayWithObjects:@"4",@"0",@"2",@"-5",@"3", nil];
