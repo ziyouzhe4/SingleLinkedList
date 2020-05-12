@@ -21,7 +21,6 @@
 		300C2EEB2413890F0016B650 /* LinkList.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2EDC2413890F0016B650 /* LinkList.m */; };
 		300C2EEC2413890F0016B650 /* LinkNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 300C2EDF2413890F0016B650 /* LinkNode.m */; };
 		30C161AB2413858B00BE33C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161AA2413858B00BE33C3 /* AppDelegate.m */; };
-		30C161AE2413858B00BE33C3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161AD2413858B00BE33C3 /* SceneDelegate.m */; };
 		30C161B12413858B00BE33C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C161B02413858B00BE33C3 /* ViewController.m */; };
 		30C161B42413858B00BE33C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C161B22413858B00BE33C3 /* Main.storyboard */; };
 		30C161B62413858C00BE33C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C161B52413858C00BE33C3 /* Assets.xcassets */; };
@@ -59,8 +58,6 @@
 		30C161A62413858B00BE33C3 /* SingleLinkedList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleLinkedList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C161A92413858B00BE33C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30C161AA2413858B00BE33C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		30C161AC2413858B00BE33C3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		30C161AD2413858B00BE33C3 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		30C161AF2413858B00BE33C3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		30C161B02413858B00BE33C3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		30C161B32413858B00BE33C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,8 +83,6 @@
 			children = (
 				30C161A92413858B00BE33C3 /* AppDelegate.h */,
 				30C161AA2413858B00BE33C3 /* AppDelegate.m */,
-				30C161AC2413858B00BE33C3 /* SceneDelegate.h */,
-				30C161AD2413858B00BE33C3 /* SceneDelegate.m */,
 				30C161B22413858B00BE33C3 /* Main.storyboard */,
 				30C161B52413858C00BE33C3 /* Assets.xcassets */,
 				30C161B72413858C00BE33C3 /* LaunchScreen.storyboard */,
@@ -144,8 +139,8 @@
 		300C2ED22413890F0016B650 /* 二叉树遍历 */ = {
 			isa = PBXGroup;
 			children = (
-				300C2ED32413890F0016B650 /* BTreeNode.m */,
 				300C2ED42413890F0016B650 /* BTreeNode.h */,
+				300C2ED32413890F0016B650 /* BTreeNode.m */,
 			);
 			path = "二叉树遍历";
 			sourceTree = "<group>";
@@ -171,9 +166,9 @@
 		300C2EDB2413890F0016B650 /* 链表的常规操作 */ = {
 			isa = PBXGroup;
 			children = (
+				300C2EDE2413890F0016B650 /* LinkList.h */,
 				300C2EDC2413890F0016B650 /* LinkList.m */,
 				300C2EDD2413890F0016B650 /* LinkNode.h */,
-				300C2EDE2413890F0016B650 /* LinkList.h */,
 				300C2EDF2413890F0016B650 /* LinkNode.m */,
 			);
 			path = "链表的常规操作";
@@ -297,7 +292,6 @@
 				300C2EE32413890F0016B650 /* BinarySearch.m in Sources */,
 				30C161BC2413858C00BE33C3 /* main.m in Sources */,
 				300C2EE12413890F0016B650 /* BaseSortArray.m in Sources */,
-				30C161AE2413858B00BE33C3 /* SceneDelegate.m in Sources */,
 				300C2EEB2413890F0016B650 /* LinkList.m in Sources */,
 				300C2EEC2413890F0016B650 /* LinkNode.m in Sources */,
 			);
@@ -442,6 +436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BT9X6T7X5V;
 				INFOPLIST_FILE = SingleLinkedList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BT9X6T7X5V;
 				INFOPLIST_FILE = SingleLinkedList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

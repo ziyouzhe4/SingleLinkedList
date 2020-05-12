@@ -87,22 +87,22 @@
 
 #pragma mark 5. 合并两个有序的链表
 
-    LinkList *list = [[LinkList alloc] init];
-    for (int i = 1; i <= 5; i++) {
-        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
-        [list insertNode:node];
-    }
-    LinkList *list2 = [[LinkList alloc] init];
-    for (int i = 6; i <= 9; i++) {
-        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
-        [list2 insertNode:node];
-    }
-
-    LinkNode *mergeHeadNode = [list mergeSortedList:[list headNode] otherNode:[list2 headNode]];
-    while (mergeHeadNode) {
-        NSLog(@"合并后值为 : %@",mergeHeadNode.value);
-        mergeHeadNode = mergeHeadNode->next;
-    }
+//    LinkList *list = [[LinkList alloc] init];
+//    for (int i = 1; i <= 5; i++) {
+//        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
+//        [list insertNode:node];
+//    }
+//    LinkList *list2 = [[LinkList alloc] init];
+//    for (int i = 6; i <= 9; i++) {
+//        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
+//        [list2 insertNode:node];
+//    }
+//
+//    LinkNode *mergeHeadNode = [list mergeSortedList:[list headNode] otherNode:[list2 headNode]];
+//    while (mergeHeadNode) {
+//        NSLog(@"合并后值为 : %@",mergeHeadNode.value);
+//        mergeHeadNode = mergeHeadNode->next;
+//    }
 
 
 #pragma mark 6. 包含min函数的栈
@@ -201,8 +201,8 @@
 //    NSLog(@"%d", [self intSum:@"1是23"]);
 
 #pragma mark 9. 二叉树遍历
-//    BTreeNode *btree = [[BTreeNode alloc] init];
-//    [btree createBTree];
+    BTreeNode *btree = [[BTreeNode alloc] init];
+    [btree createBTree];
 
 #pragma mark 11. 求一个字符串中出现最多字符的个数
 //    LeetCodeDemo *leetcode = [LeetCodeDemo new];
@@ -446,6 +446,19 @@
     self.array[b] = temp;
 
 }
+/*
+   4
+ 2      7
+1  3   6  9
+*/
+//struct TreeNode * reverse(struct TreeNode * root) {
+//    if (root == NULL) return root;
+//    struct TreeNode * right = reverse(root->right);
+//    struct TreeNode * left = reverse(root->left);
+//    root->left = right;
+//    root->right = left;
+//    return root;
+//}
 
 
 

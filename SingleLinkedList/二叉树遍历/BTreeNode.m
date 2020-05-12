@@ -10,7 +10,7 @@
  demo结构
                     a(1)
 
-           b(1)                c(3)
+           b(2)                c(3)
 
       d(4)      e(5)     f(6)      g(7)
 
@@ -72,6 +72,32 @@
 
 }
 
+// 层序遍历
++ (void)levelOrder:(BTreeNode *)root{
+
+    NSLog(@"层序遍历\n");
+    NSMutableArray *queue = [NSMutableArray array];
+    [queue addObject:root];
+
+    while (queue.count != 0)
+    {
+        BTreeNode *root = queue.firstObject;
+        [queue removeObject:root];
+        printf("结点: %d \n", root->data);
+
+        if (root.lchild){
+            [queue addObject:root.lchild];
+            NSLog(@"%@",queue);
+        }
+
+        if(root.rchild){
+            [queue addObject:root.rchild];
+        }
+
+    }
+
+}
+
 - (void)createBTree{
 
         BTreeNode *h = [[BTreeNode alloc] init];
@@ -122,7 +148,24 @@
         [BTreeNode midorder:a];   // 中序
         [BTreeNode nextorder:a];  // 后序
 
+        [BTreeNode levelOrder:a];  // 层序
 
+       BTreeNode *temp = [BTreeNode reverseTree:a];// 反转
+        NSLog(@"二叉树反转: %@",temp);
+
+
+}
+
++ (BTreeNode *)reverseTree:(BTreeNode *)root{
+    if(root==NULL) return root;
+
+    BTreeNode *lchild = [self reverseTree:root.lchild];
+    BTreeNode *rchild = [self reverseTree:root.rchild];
+
+    BTreeNode *temp = lchild;
+    root.lchild = rchild;
+    root.rchild = temp;
+    return root;
 }
 
 @end
