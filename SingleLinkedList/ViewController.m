@@ -41,6 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.view.backgroundColor = [UIColor whiteColor];
 #pragma mark 0. 初始化链表
 
 //        LinkList *list = [[LinkList alloc] init];
