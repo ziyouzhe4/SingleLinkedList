@@ -31,7 +31,6 @@
                 self.sortArray[j+1] = temp;
 
             }
-
         }
 
     }

@@ -50,7 +50,7 @@
 
     if (self == [super init]) {
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 6; i++) {
             NSNumber *num =  [NSNumber numberWithInt:i];
             [self.searchArray addObject:num];
         }

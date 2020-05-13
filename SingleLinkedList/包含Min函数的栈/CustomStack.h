@@ -32,9 +32,15 @@
 - (void)stackWithMinPop;
 
 /**
- 返回栈顶元素
+ 查询栈顶元素
  */
--(NSNumber *)topObj;
+-(NSNumber *)peek;
+
+/**
+ 移除栈顶元素
+ */
+-(NSNumber *)top;
+
 
 
 /**

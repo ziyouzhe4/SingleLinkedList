@@ -201,8 +201,8 @@
 //    NSLog(@"%d", [self intSum:@"1是23"]);
 
 #pragma mark 9. 二叉树遍历
-    BTreeNode *btree = [[BTreeNode alloc] init];
-    [btree createBTree];
+//    BTreeNode *btree = [[BTreeNode alloc] init];
+//    [btree createBTree];
 
 #pragma mark 11. 求一个字符串中出现最多字符的个数
 //    LeetCodeDemo *leetcode = [LeetCodeDemo new];

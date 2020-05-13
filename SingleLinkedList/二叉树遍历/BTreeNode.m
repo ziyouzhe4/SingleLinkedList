@@ -12,7 +12,7 @@
 
            b(2)                c(3)
 
-      d(4)      e(5)     f(6)      g(7)
+      d(4)      e(5)       f(6)      g(7)
 
   h(8)
 
@@ -32,12 +32,28 @@
  @param node node
  */
 + (void)preorder:(BTreeNode *)node{
-
     if(node){
         NSLog(@"前序遍历 :  %d",node->data);
         [self preorder:node.lchild];
         [self preorder:node.rchild];
     }
+
+}
+
+/**
+ 前序遍历   中左右
+
+ @param node node
+ */
++ (NSMutableArray *)preorder2:(BTreeNode *)node{
+    NSMutableArray *nodes = [NSMutableArray array];
+    if(node){
+        NSLog(@"前序遍历 :  %d",node->data);
+        [nodes addObject:@(node->data)];
+        [nodes addObjectsFromArray:[self preorder2:node.lchild]];
+        [nodes addObjectsFromArray:[self preorder2:node.rchild]];
+    }
+    return nodes;
 
 }
 
@@ -144,6 +160,7 @@
         a.lchild = b;
         a.rchild = c;
 
+            NSLog(@"得到二叉树中的所有值：%@",[BTreeNode preorder2:a]);  //前序
         [BTreeNode preorder:a];  //前序
         [BTreeNode midorder:a];   // 中序
         [BTreeNode nextorder:a];  // 后序

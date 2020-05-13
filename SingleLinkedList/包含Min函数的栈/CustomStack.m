@@ -46,7 +46,7 @@
     return _m_data;
 }
 
--(NSNumber *)topObj {
+-(NSNumber *)peek {
     if ([self isEmpty]) {
         return @-1;
     } else {
@@ -61,26 +61,24 @@
  @param value push进来的值
  */
 - (void)stackWithMinPush:(NSNumber *)value{
-
+/// m_data  5  8  19  7
+/// m_min   5  5  5  5
     [self.m_data addObject:value];
 
-    if (self.m_min.count == 0 || value < [self topObj]) {
-
+    if (self.m_min.count == 0 || [[self peek] intValue] > [value intValue]) {
         [self.m_min addObject:value];
-    }else{
-        [self.m_min addObject:[self topObj]];
+    }else {
+        [self.m_min addObject:[self peek]];
     }
-
+    
 }
 
 /**
  pop操作
  */
 - (void)stackWithMinPop{
-
-    [self.m_min removeLastObject];
     [self.m_data removeLastObject];
-
+    [self.m_min removeLastObject];
 }
 
 /**
@@ -90,10 +88,16 @@
  */
 - (NSNumber *)stackWithMinMin{
 
-    return [self topObj];
+    return [self peek];
 
 }
 
+/**
+ 移除栈顶元素
+ */
+-(NSNumber *)top{
+    return self.m_data.lastObject;
+}
 
 
 
