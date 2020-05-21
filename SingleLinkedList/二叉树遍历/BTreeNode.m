@@ -80,25 +80,33 @@
 // 层序遍历
 + (void)levelOrder:(BTreeNode *)root{
 
-    NSLog(@"层序遍历");
-    NSMutableArray *queue = [NSMutableArray array];
-    [queue addObject:root];
-
-    while (queue.count != 0)
-    {
-        BTreeNode *root = queue.firstObject;
-        [queue removeObject:root];
-        printf("结点: %d \n", root->data);
-
-        if (root.lchild){
-            [queue addObject:root.lchild];
-        }
-
-        if(root.rchild){
-            [queue addObject:root.rchild];
-        }
-
-    }
+//<<<<<<< HEAD
+//    NSLog(@"层序遍历");
+//=======
+//    NSLog(@"层序遍历\n");
+//    NSMutableArray *list = [NSMutableArray array];
+//>>>>>>> updt
+//    NSMutableArray *queue = [NSMutableArray array];
+//    [queue addObject:root];
+//
+//    while (queue.count != 0)
+//    {
+//        BTreeNode *root = queue.firstObject;
+//        [queue removeObject:root];
+//        printf("结点: %d \n", root->data);
+//        [list addObject:@(root->data)];
+//
+//        if (root.lchild){
+//            [queue addObject:root.lchild];
+//        }
+//
+//        if(root.rchild){
+//            [queue addObject:root.rchild];
+//        }
+//
+//    }
+//
+//    NSLog(@"打印层序遍历结果: %@",list);
 
 }
 
