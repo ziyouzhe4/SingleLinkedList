@@ -50,7 +50,7 @@
  @return 是否是回文
  */
 - (BOOL)IsPalindereme:(NSString *)str size:(int)size;
-
+- (BOOL)IsPalindereme2:(NSString *)str size:(int)size;
 
 - (void)strConverToInt:(char *)str;
 

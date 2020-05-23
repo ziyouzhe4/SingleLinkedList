@@ -348,7 +348,7 @@
 
 }
 
-
+/// 合并两个链表
 - (LinkNode *)mergeSortedList:(LinkNode *)pHead1 otherNode:(LinkNode *)pHead2{
 
     if (pHead1 == NULL) {
@@ -371,6 +371,72 @@
 
     return pMergeNodeHead;
 
+}
+
+///
+/// 1->2->3   2->3->8 相当于 321 + 832 = 1153   返回 3->5->1->1
+/// 链表求和
+
+- (LinkNode *)sumOfTwoLinkNode:(LinkNode *)pHead1 otherNode:(LinkNode *)pHead2{
+    
+    if (pHead1 == NULL) {
+        return pHead2;
+    }
+    
+    if (pHead2 == NULL) {
+        return pHead1;
+    }
+    
+    LinkNode *ans = [[LinkNode alloc] init];
+    LinkNode *sumNode = ans;
+    int carry = 0;
+    
+    while (pHead1 != NULL && pHead2 != NULL) {
+        int p1V = [pHead1.value intValue];
+        int p2V = [pHead2.value intValue];
+        
+        int sum = p1V+p2V+carry;
+        
+        carry = sum / 10;
+        
+        sumNode->next = [[LinkNode alloc] initWithKey:@"1" value:[NSString stringWithFormat:@"%d",sum % 10]];
+        
+        
+        pHead1 = pHead1->next;
+        pHead2 = pHead2->next;
+        
+        sumNode = sumNode->next;
+        
+    }
+    
+    if (carry == 1) {
+        sumNode->next = [[LinkNode alloc] initWithKey:@"2" value:[NSString stringWithFormat:@"%d",carry]];
+    }
+
+    
+    return ans;
+    
+}
+
+
+- (LinkNode *)resverNode:(LinkNode *)node{
+    
+    LinkNode *pre = nil;
+   LinkNode *current = node;
+   LinkNode *next = nil;
+
+   while (current) {
+
+       next = current->next;
+       current->next = pre;
+       pre = current;
+       current = next;
+
+   }
+
+   _headNode = pre;
+    
+    return _headNode;
 }
 
 

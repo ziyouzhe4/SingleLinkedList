@@ -112,6 +112,13 @@
  */
 - (LinkNode *)mergeSortedList:(LinkNode *)pHead1 otherNode:(LinkNode *)pHead2;
 
+/**
+求两个链表的和
+@param pHead1 头结点
+@param pHead2 头结点
+@return 新的链表的头结点
+*/
 
+- (LinkNode *)sumOfTwoLinkNode:(LinkNode *)pHead1 otherNode:(LinkNode *)pHead2;
 
 @end

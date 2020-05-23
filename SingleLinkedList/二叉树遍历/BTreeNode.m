@@ -114,11 +114,61 @@
 
 }
 
+///反转二叉树
++ (BTreeNode *)reverseTree:(BTreeNode *)root{
+    if(root==NULL) return root;
+
+    BTreeNode *lchild = [self reverseTree:root.lchild];
+    BTreeNode *rchild = [self reverseTree:root.rchild];
+
+    BTreeNode *temp = lchild;
+    root.lchild = rchild;
+    root.rchild = temp;
+    return root;
+}
+
+
+/// 求树的深度
++ (int)depthOfTree:(BTreeNode *)root{
+    if(root == NULL){
+        return 0;
+    }
+    
+    int left = [self depthOfTree:root->_lchild];
+    int right = [self depthOfTree:root->_rchild];
+    
+    return (left>right)?(left+1):(right+1);
+    
+}
+
++ (BOOL)isBalanceTree:(BTreeNode *)root{
+    if (root == NULL) {
+        return true;
+    }
+    
+    int depthLeft = [self depthOfTree:root->_lchild];
+    int depthRight = [self depthOfTree:root->_rchild];
+    int diff = depthLeft - depthRight;
+    if (diff > 1 || diff < -1) {
+        return false;
+    }
+    
+    return [self isBalanceTree:root->_lchild] && [self isBalanceTree:root->_rchild];
+
+}
+
 - (void)createBTree{
 
+        
+//        BTreeNode *i = [[BTreeNode alloc] init];
+//        i->data = 9;
+//        i.lchild = nil;
+//        i.rchild = nil;
+    
         BTreeNode *h = [[BTreeNode alloc] init];
         h->data = 8;
         h.lchild = nil;
+//        h.lchild = i;
         h.rchild = nil;
 
 
@@ -170,19 +220,13 @@
        BTreeNode *temp = [BTreeNode reverseTree:a];// 反转
         NSLog(@"二叉树反转: %@",temp);
 
+        NSLog(@"二叉树的深度： %d",[BTreeNode depthOfTree:a]);
+    
+    
+        NSLog(@"是否是平衡二叉树 ：  %d",[BTreeNode isBalanceTree:a]);
 
 }
 
-+ (BTreeNode *)reverseTree:(BTreeNode *)root{
-    if(root==NULL) return root;
 
-    BTreeNode *lchild = [self reverseTree:root.lchild];
-    BTreeNode *rchild = [self reverseTree:root.rchild];
-
-    BTreeNode *temp = lchild;
-    root.lchild = rchild;
-    root.rchild = temp;
-    return root;
-}
 
 @end

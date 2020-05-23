@@ -23,14 +23,6 @@
 
 @interface ViewController ()
 
-
-@property (nonatomic,strong)NSTimer *timer1;
-@property (nonatomic,strong)NSTimer *timer2;
-@property (nonatomic,strong)NSTimer *timer3;
-@property (nonatomic,strong)NSTimer *timer4;
-
-@property (nonatomic,strong)NSString *name;
-
 @property (nonatomic,strong)NSMutableArray *array;
 
 @end
@@ -41,6 +33,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+//    [self test2222];
+    
     self.view.backgroundColor = [UIColor whiteColor];
 #pragma mark 0. 初始化链表
 
@@ -51,6 +45,7 @@
 //            [list insertNode:node];
 //        }
 //
+    
 //        LinkList *list2 = [[LinkList alloc] init];
 //        [list2 insertNode:[[LinkNode alloc] initWithKey:@"0" value:@"000"]];
 
@@ -82,7 +77,7 @@
 
 #pragma mark 4. 判断两个单链表是否相交
 
-//    LinkNode *crossNode = [list isCross:[list headNode] list2:[list2 headNode]];
+//    LinkNode *crossNode = [list isCross:[list headNode] list2:[list headNode]];
 //    NSLog(@"list 和 list2 链表 的交点是 : %@",crossNode.value);
 
 
@@ -98,7 +93,7 @@
 //        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
 //        [list2 insertNode:node];
 //    }
-//
+
 //    LinkNode *mergeHeadNode = [list mergeSortedList:[list headNode] otherNode:[list2 headNode]];
 //    while (mergeHeadNode) {
 //        NSLog(@"合并后值为 : %@",mergeHeadNode.value);
@@ -202,7 +197,7 @@
 //    NSLog(@"%d", [self intSum:@"1是23"]);
 
 #pragma mark 9. 二叉树遍历
-//    BTreeNode *btree = [[BTreeNode alloc] init];
+    BTreeNode *btree = [[BTreeNode alloc] init];
 //    [btree createBTree];
 
 #pragma mark 11. 求一个字符串中出现最多字符的个数
@@ -280,9 +275,9 @@
 
 
 
-//    NSString *str = @"1221";
-
-//    NSLog(@"%d",[leetcode IsPalindereme:str size:(int)str.length]);
+//    NSString *str = @"123456754321";
+//
+//    NSLog(@"回文字符串 ：%d",[leetcode IsPalindereme2:str size:(int)str.length]);
 
 
 //    char *strInt = "123459";
@@ -320,6 +315,40 @@
 //    LinkNode *head = [self removeNthFromEnd:list.headNode n:4];
 //    NSLog(@"操作后 :");
 //    [self printLinkList:head];
+    
+#pragma mark 18. 求两个链表的和
+    
+//    LinkList *list = [[LinkList alloc] init];
+//
+//    LinkNode *node1 = [[LinkNode alloc] initWithKey:@"1" value:[NSString stringWithFormat:@"%d",1]];
+//    LinkNode *node2 = [[LinkNode alloc] initWithKey:@"2" value:[NSString stringWithFormat:@"%d",2]];
+//    LinkNode *node3 = [[LinkNode alloc] initWithKey:@"3" value:[NSString stringWithFormat:@"%d",3]];
+//
+//    [list insertNode:node1];
+//    [list insertNode:node2];
+//    [list insertNode:node3];
+//    
+//    
+//    
+//    
+//    LinkList *list2 = [[LinkList alloc] init];
+//    
+//    LinkNode *node8 = [[LinkNode alloc] initWithKey:@"2" value:[NSString stringWithFormat:@"%d",6]];
+//    LinkNode *node9 = [[LinkNode alloc] initWithKey:@"4" value:[NSString stringWithFormat:@"%d",8]];
+//    LinkNode *node10 = [[LinkNode alloc] initWithKey:@"6" value:[NSString stringWithFormat:@"%d",9]];
+//    
+//    [list2 insertNode:node8];
+//    [list2 insertNode:node9];
+//    [list2 insertNode:node10];
+//    
+//    LinkNode *sumNode = [list sumOfTwoLinkNode:list.headNode otherNode:list2.headNode];
+//    
+//    while (sumNode) {
+//        sumNode = sumNode->next;
+//        NSLog(@"求和后 值为 : %@",sumNode.value);
+//    }
+
+
     
     
 }
@@ -447,6 +476,22 @@
     self.array[b] = temp;
 
 }
+
+- (void)test{
+    
+    int a = 1;
+    int b = 2;
+    
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    
+    
+    NSLog(@"a = %d , b = %d" ,a,b);
+    
+}
+
+
 /*
    4
  2      7
@@ -462,5 +507,33 @@
 //}
 
 
+- (void)test2222{
+
+    dispatch_queue_t queue  = dispatch_queue_create("majianjei", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_async(queue, ^{
+        
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            NSLog(@"任务1");
+        });
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"任务2");
+    });
+    
+    dispatch_barrier_sync(queue, ^{
+        NSLog(@"任务3");
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"任务4");
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"任务5");
+    });
+    
+}
 
 @end

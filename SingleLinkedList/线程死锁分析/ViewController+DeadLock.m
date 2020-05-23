@@ -36,7 +36,7 @@
 
     [super viewWillAppear:animated];
 
-    [self demo3];
+//    [self demo3];
 
 
 

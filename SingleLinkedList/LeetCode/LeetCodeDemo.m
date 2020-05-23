@@ -133,14 +133,14 @@
         return [array[num] intValue];
     }
 
-    int num2 = [array[0] intValue];
+    int num0 = [array[0] intValue];
     int num1 = [array[1] intValue];
     int tempNum = 0;
 
     for (int i = 2; i <= num; i++) {
 
-        tempNum = num1 + num2;
-        num2 = num1;
+        tempNum = num1 + num0;
+        num0 = num1;
         num1 = tempNum;
 
     }
@@ -257,6 +257,29 @@
     }
     return true;
 
+}
+
+- (BOOL)IsPalindereme2:(NSString *)str size:(int)size{
+
+    if(size == 1){
+        return YES;
+    }
+    
+    //循环到字符串的一半就行  字符串+1向下取整避免了奇数和偶数不同 1234321  7
+    int  len = (size + 1) / 2 ;
+    
+    for(int i = 0; i < len; i++) {
+        NSString *pre = [str substringWithRange:NSMakeRange(i, 1)];
+        NSString *after = [str substringWithRange:NSMakeRange(str.length - i - 1, 1)];
+        
+        if(![pre isEqualToString:after]) {
+            return false;
+        }
+    }
+    
+    return YES;
+    
+    
 }
 
 - (void)strConverToInt:(char *)str{
