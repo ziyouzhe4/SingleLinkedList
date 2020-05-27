@@ -127,6 +127,7 @@
  */
 - (int)fibonacci:(int)num{
 
+    
     NSArray *array = [NSArray arrayWithObjects:@"0",@"1", nil];
 
     if (num < 2) {
@@ -150,6 +151,9 @@
 
 
     return tempNum;
+    
+    
+    
 
 }
 
@@ -166,7 +170,7 @@
 
 
 /**
- 找出一个数组中字符串相同字符大于 2的
+ 找出一个数组中字符串相同 字符大于 2的
  */
 - (void)findSameStrinArray{
 
