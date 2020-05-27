@@ -29,11 +29,16 @@
 
 @implementation ViewController
 
+- (BOOL)isKindOfClass:(Class)cls {
+    for (Class tcls = [self class]; tcls; tcls = tcls.superclass) {
+        if (tcls == cls) return YES;
+    }
+    return NO;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-//    [self test2222];
     
     self.view.backgroundColor = [UIColor whiteColor];
 #pragma mark 0. 初始化链表
@@ -85,15 +90,15 @@
 
 //    LinkList *list = [[LinkList alloc] init];
 //    for (int i = 1; i <= 5; i++) {
-//        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
+//        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*2]];
 //        [list insertNode:node];
 //    }
 //    LinkList *list2 = [[LinkList alloc] init];
 //    for (int i = 6; i <= 9; i++) {
-//        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*111]];
+//        LinkNode *node = [[LinkNode alloc] initWithKey:[NSString stringWithFormat:@"%d",i] value:[NSString stringWithFormat:@"%d",i*1]];
 //        [list2 insertNode:node];
 //    }
-
+//
 //    LinkNode *mergeHeadNode = [list mergeSortedList:[list headNode] otherNode:[list2 headNode]];
 //    while (mergeHeadNode) {
 //        NSLog(@"合并后值为 : %@",mergeHeadNode.value);
@@ -198,7 +203,7 @@
 
 #pragma mark 9. 二叉树遍历
     BTreeNode *btree = [[BTreeNode alloc] init];
-//    [btree createBTree];
+    [btree createBTree];
 
 #pragma mark 11. 求一个字符串中出现最多字符的个数
 //    LeetCodeDemo *leetcode = [LeetCodeDemo new];
@@ -327,22 +332,22 @@
 //    [list insertNode:node1];
 //    [list insertNode:node2];
 //    [list insertNode:node3];
-//    
-//    
-//    
-//    
+//
+//
+//
+//
 //    LinkList *list2 = [[LinkList alloc] init];
-//    
+//
 //    LinkNode *node8 = [[LinkNode alloc] initWithKey:@"2" value:[NSString stringWithFormat:@"%d",6]];
 //    LinkNode *node9 = [[LinkNode alloc] initWithKey:@"4" value:[NSString stringWithFormat:@"%d",8]];
 //    LinkNode *node10 = [[LinkNode alloc] initWithKey:@"6" value:[NSString stringWithFormat:@"%d",9]];
-//    
+//
 //    [list2 insertNode:node8];
 //    [list2 insertNode:node9];
 //    [list2 insertNode:node10];
-//    
+//
 //    LinkNode *sumNode = [list sumOfTwoLinkNode:list.headNode otherNode:list2.headNode];
-//    
+//
 //    while (sumNode) {
 //        sumNode = sumNode->next;
 //        NSLog(@"求和后 值为 : %@",sumNode.value);

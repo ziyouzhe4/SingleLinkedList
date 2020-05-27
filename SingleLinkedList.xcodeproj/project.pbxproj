@@ -104,16 +104,16 @@
 		300C2EC12413890F0016B650 /* 数组排序查找操作 */ = {
 			isa = PBXGroup;
 			children = (
-				300C2EC22413890F0016B650 /* BinarySearch.h */,
-				300C2EC32413890F0016B650 /* BubblingSort.h */,
-				300C2EC42413890F0016B650 /* QuickSort.h */,
-				300C2EC52413890F0016B650 /* BaseSortArray.m */,
-				300C2EC62413890F0016B650 /* MergeSort.h */,
-				300C2EC72413890F0016B650 /* BubblingSort.m */,
-				300C2EC82413890F0016B650 /* BinarySearch.m */,
-				300C2EC92413890F0016B650 /* QuickSort.m */,
-				300C2ECA2413890F0016B650 /* MergeSort.m */,
 				300C2ECB2413890F0016B650 /* BaseSortArray.h */,
+				300C2EC52413890F0016B650 /* BaseSortArray.m */,
+				300C2EC22413890F0016B650 /* BinarySearch.h */,
+				300C2EC82413890F0016B650 /* BinarySearch.m */,
+				300C2EC32413890F0016B650 /* BubblingSort.h */,
+				300C2EC72413890F0016B650 /* BubblingSort.m */,
+				300C2EC42413890F0016B650 /* QuickSort.h */,
+				300C2EC92413890F0016B650 /* QuickSort.m */,
+				300C2EC62413890F0016B650 /* MergeSort.h */,
+				300C2ECA2413890F0016B650 /* MergeSort.m */,
 			);
 			path = "数组排序查找操作";
 			sourceTree = "<group>";

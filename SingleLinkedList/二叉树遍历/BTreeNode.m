@@ -6,6 +6,8 @@
 //  Copyright © 2018年 majianjie. All rights reserved.
 //
 
+#import "BTreeNode.h"
+
 /**
  demo结构
                     a(1)
@@ -18,20 +20,13 @@
 
  */
 
-
-
-
-#import "BTreeNode.h"
-
-
 @implementation BTreeNode
 
 /**
  前序遍历   中左右
-
- @param node node
  */
 + (void)preorder:(BTreeNode *)node{
+    
     if(node){
         NSLog(@"前序遍历 :  %d",node->data);
         [self preorder:node.lchild];
@@ -41,14 +36,12 @@
 }
 
 /**
- 前序遍历   中左右
-
- @param node node
+ 前序遍历   中左右  带返回值
  */
 + (NSMutableArray *)preorder2:(BTreeNode *)node{
     NSMutableArray *nodes = [NSMutableArray array];
     if(node){
-        NSLog(@"前序遍历 :  %d",node->data);
+        NSLog(@"前序遍历2 :  %d",node->data);
         [nodes addObject:@(node->data)];
         [nodes addObjectsFromArray:[self preorder2:node.lchild]];
         [nodes addObjectsFromArray:[self preorder2:node.rchild]];
@@ -60,8 +53,6 @@
 
 /**
  中序遍历    左中右
-
- @param node node
  */
 + (void)midorder:(BTreeNode *)node{
 
@@ -74,8 +65,6 @@
 }
 /**
  后序遍历     左右中
-
- @param node node
  */
 + (void)nextorder:(BTreeNode *)node{
 
@@ -91,7 +80,7 @@
 // 层序遍历
 + (void)levelOrder:(BTreeNode *)root{
 
-    NSLog(@"层序遍历\n");
+    NSLog(@"层序遍历");
     NSMutableArray *queue = [NSMutableArray array];
     [queue addObject:root];
 
@@ -103,7 +92,6 @@
 
         if (root.lchild){
             [queue addObject:root.lchild];
-            NSLog(@"%@",queue);
         }
 
         if(root.rchild){
@@ -210,19 +198,19 @@
         a.lchild = b;
         a.rchild = c;
 
-            NSLog(@"得到二叉树中的所有值：%@",[BTreeNode preorder2:a]);  //前序
-        [BTreeNode preorder:a];  //前序
-        [BTreeNode midorder:a];   // 中序
-        [BTreeNode nextorder:a];  // 后序
-
+        NSLog(@"得到二叉树中的所有值：%@",[BTreeNode preorder2:a]);  //前序
+//        [BTreeNode preorder:a];  //前序
+//        [BTreeNode midorder:a];   // 中序
+//        [BTreeNode nextorder:a];  // 后序
+//
         [BTreeNode levelOrder:a];  // 层序
 
        BTreeNode *temp = [BTreeNode reverseTree:a];// 反转
         NSLog(@"二叉树反转: %@",temp);
-
-        NSLog(@"二叉树的深度： %d",[BTreeNode depthOfTree:a]);
-    
-    
+//
+//        NSLog(@"二叉树的深度： %d",[BTreeNode depthOfTree:a]);
+//
+//
         NSLog(@"是否是平衡二叉树 ：  %d",[BTreeNode isBalanceTree:a]);
 
 }

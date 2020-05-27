@@ -419,25 +419,4 @@
 }
 
 
-- (LinkNode *)resverNode:(LinkNode *)node{
-    
-    LinkNode *pre = nil;
-   LinkNode *current = node;
-   LinkNode *next = nil;
-
-   while (current) {
-
-       next = current->next;
-       current->next = pre;
-       pre = current;
-       current = next;
-
-   }
-
-   _headNode = pre;
-    
-    return _headNode;
-}
-
-
 @end
