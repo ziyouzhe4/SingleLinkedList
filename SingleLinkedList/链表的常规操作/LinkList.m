@@ -386,7 +386,6 @@
     if (pHead2 == NULL) {
         return pHead1;
     }
-    
     LinkNode *ans = [[LinkNode alloc] init];
     LinkNode *sumNode = ans;
     int carry = 0;
@@ -396,24 +395,20 @@
         int p2V = [pHead2.value intValue];
         
         int sum = p1V+p2V+carry;
-        
         carry = sum / 10;
         
-        sumNode->next = [[LinkNode alloc] initWithKey:@"1" value:[NSString stringWithFormat:@"%d",sum % 10]];
-        
-        
+        sumNode->next = [[LinkNode alloc] initWithKey:@"1"
+                                                value:
+                         [NSString stringWithFormat:@"%d",sum % 10]];
         pHead1 = pHead1->next;
         pHead2 = pHead2->next;
         
         sumNode = sumNode->next;
         
     }
-    
     if (carry == 1) {
         sumNode->next = [[LinkNode alloc] initWithKey:@"2" value:[NSString stringWithFormat:@"%d",carry]];
     }
-
-    
     return ans;
     
 }

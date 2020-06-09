@@ -3,3 +3,4 @@ DerivedData
 *.xcuserstate
 UserInterfaceState.xcuserstate
 *.xcbkptlist
+xcschememanagement.plist
